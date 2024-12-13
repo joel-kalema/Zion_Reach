@@ -1,17 +1,8 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+// import Header from './components/Header';
+import Footer from './components/Footer';
+import { BsListNested } from "react-icons/bs";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,10 +16,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <head>
+        {/* Add Clash Display font via link */}
+        <link
+          href="https://api.fontshare.com/v2/css?f[]=clash-display@300,400,500,600,700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body className="antialiased font-clash">
+        {/* <Header /> */}
+        <div className="text-xl bg-white px-6 py-2 fixed bottom-0 left-0 z-50 flex items-center justify-between gap-4">MENU <BsListNested /></div>
+        <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );

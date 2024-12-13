@@ -2,20 +2,56 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@300,400,500,600,700&display=swap');
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Clash Display', sans-serif;
+  color: #28292A;
+}
+
+.text-border {
+  font-weight: bold;
+  color: white;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.282);
+  /* Border color and size */
+}
+
+.text-border-rotate {
+  font-weight: bold;
+  color: white;
+  color: transparent;
+  -webkit-text-stroke: 1px #FE8C12;
+  /* Border color and size */
+}
+
+.white-gradient-b {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 45%);
+}
+
+.white-gradient-t {
+  background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,1) 31%, rgba(255,255,255,0) 100%);
+
+}
+
+.color {
+  color: #055DE2 #159CED #8F78EA #FE8C12 #28292A
+}
+
+#testimonials .grid div {
+  border-left: 4px solid #007bff;
+  padding-left: 1rem;
+}
+
+/* Portfolio Styles */
+#portfolio img {
+  max-width: 100%;
+  height: auto;
+}
+
+#portfolio .grid div:hover img {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
