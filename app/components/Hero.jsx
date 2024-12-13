@@ -1,6 +1,5 @@
 import Image from "next/image";
 import HoverButton from "@/components/reuseble/HoverButton";
-import { BsArrowRight } from "react-icons/bs";
 
 const HeroSection = () => {
   return (
