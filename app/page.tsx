@@ -1,6 +1,6 @@
 import Hero from "./components/Hero";
 import About from "./components/About";
-import Mission from "./components/Mission";
+// import Mission from "./components/Mission";
 import Vision from "./components/Vision";
 import Services from "./components/Services";
 import ContactForm from "./components/ContactForm";
