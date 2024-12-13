@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { HiOutlineArrowRight } from "react-icons/hi2";
+import HoverButton from "@/components/reuseble/HoverButton";
+import { BsArrowRight } from "react-icons/bs";
 
 const HeroSection = () => {
   return (
@@ -14,10 +15,12 @@ const HeroSection = () => {
             Empowering communities through sustainable solutions, innovation, and collaboration for a better tomorrow.
           </p>
           <div className="mt-8">
-            <a href="#learn-more" className="px-10 py-3 text-2xl text-white rounded-full flex items-center justify-between border w-3/6">
-              Learn More
-              <HiOutlineArrowRight />
-            </a>
+            <HoverButton
+              href="#learn-more"
+              text="Learn More"
+              borderColor="border-[#fff]"
+              circleColor="bg-[#FE8C12]"
+            />
           </div>
         </div>
       </div>
