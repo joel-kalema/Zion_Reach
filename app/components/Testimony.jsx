@@ -6,8 +6,8 @@ const Testimony = () => {
         message: "Zion Reach transformed our marketing strategy. Their professionalism and creativity are unmatched!",
       },
       {
-        name: "Jane Smith",
-        role: "Pastor, Grace Church",
+        name: "Christopher Beleke Tabu",
+        role: "Pastor, TFC Dallas Church",
         message: "Thanks to Zion Reach, our message now reaches a wider audience. Highly recommend their services!",
       },
       {
@@ -18,14 +18,14 @@ const Testimony = () => {
     ];
   
     return (
-      <section className="bg-gray-100 py-10" id="testimonials">
+      <section className="bg-[#8F78EA] py-40" id="testimonials">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center text-blue-700 mb-6">Client Testimonials</h2>
+          <h2 className="text-3xl font-bold text-center text-[#fff] mb-16">Client Testimonials</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
-                className="bg-white shadow-md p-6 rounded-lg hover:shadow-lg transition-shadow"
+                className="bg-white p-6"
               >
                 <p className="text-gray-600 italic mb-4">&quot;{testimonial.message}&quot;</p>
                 <h3 className="text-lg font-semibold text-blue-700">{testimonial.name}</h3>
