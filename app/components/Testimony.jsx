@@ -8,13 +8,13 @@ const Testimony = () => {
       picture: '/Jeremy.JPG'
     },
     {
-      name: "Christopher Beleke Tabu",
+      name: "Christopher Beleke",
       role: "Pastor, TFC Dallas Church",
       message: "Thanks to Zion Reach, our message now reaches a wider audience. Highly recommend their services!",
       picture: '/beleke.png'
     },
     {
-      name: "Michael Brown",
+      name: "Damaris",
       role: "Founder, Startup Inc.",
       message: "Their branding expertise gave our company a fresh new look. Truly a pleasure to work with!",
       picture: '/damaris.JPG'
@@ -33,7 +33,7 @@ const Testimony = () => {
           >
             <div className="border p-4">
               <p className="text-gray-600 italic mb-4">&quot;{testimonial.message}&quot;</p>
-              <h3 className="text-lg font-semibold text-blue-700">{testimonial.name}</h3>
+              <h3 className="text-lg font-semibold text-[]">{testimonial.name}</h3>
               <p className="text-sm text-gray-500 mb-6">{testimonial.role}</p>
 
               <div className="relative w-[8rem] h-[8rem] overflow-hidden">

@@ -3,6 +3,8 @@
 import Image from "next/image";
 import { ParallaxProvider, Parallax } from "react-scroll-parallax";
 import HoverButton from "@/components/reuseble/HoverButton";
+import { BsArrowRight } from 'react-icons/bs';
+import Link from "next/link";
 
 const ParallaxImageSection = ({ images, speed, marginTop = "" }) => (
   <div className={`w-1/3 flex flex-col ${marginTop}`}>
@@ -32,23 +34,27 @@ const Portfolio = () => {
       <div className="">
 
         <div className="relative h-[50vh] mx-auto overflow-hidden z-10 flex py-10">
-          <div className="flex mx-auto border">
+          <div className="absolute left-0 white-gradient-left w-1/6 h-full z-30"></div>
+          <div className="absolute right-0 white-gradient-right w-1/6 h-full z-30"></div>
+          <div className="flex mx-auto">
             <Image src='/zoin1.png' layout="responsive" width={150} height={300} alt='zoin logo' quality={100} className="z-20" />
             <Image src='/zoin2.png' layout="responsive" width={150} height={300} alt='zoin logo' quality={100} />
           </div>
           <div className="absolute top-0 left-0 flex items-center w-full h-full whitespace-nowrap scale-150">
-            <div className="flex animate-scroll">
+            <div className="flex animate-scroll relative">
               {[...Array(5)].map((_, i) => (
-                <h1
+                <div
                   key={i}
-                  className="m-0 text-8xl text-[#000] mx-8 transition-all duration-1000 ease-in-out z-10"
+                  className="m-0 text-8xl text-[#000] mx-8 transition-all duration-1000 ease-in-out z-10 font-semibold flex items-center gap-5"
                 >
-                  we bring your imagination to life.
-                </h1>
+                  <p>we bring your imagination to life</p>
+                  <div className="relative w-[13rem] h-[6rem] overflow-hidden rounded-full">
+                    <Image src='/solution.jpg' layout="fill" objectFit="cover" alt="bay" quality={100} />
+                  </div>
+                </div>
               ))}
             </div>
           </div>
-
         </div>
         <div className="px-20 py-10 flex justify-between ">
           <p className="w-2/6 text-lg">From bold ideas to stunning realities,
@@ -84,7 +90,13 @@ const Portfolio = () => {
           {["CBT Ministry", "Qavah Group", "RAMAH Institute"].map((title, index) => (
             <div key={index} className="w-1/3 h-[25rem] border">
               <div className="h-[70%] border-b"></div>
-              <div className="h-[30%] p-4 text-center">{title}</div>
+              <div className="h-[30%] p-4">
+                <div className="flex gap-4 items-center mb-6">
+                  <div className="w-[10px] h-[10px] bg-[#FE8C12]"></div>
+                  {title}
+                </div>
+                <Link href='#' className="flex items-center gap-2">SEE DETAILS <BsArrowRight /></Link>
+              </div>
             </div>
           ))}
         </div>
