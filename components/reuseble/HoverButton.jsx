@@ -5,7 +5,7 @@ const HoverButton = ({ href, text, borderColor, circleColor }) => {
   return (
     <a
       href={href}
-      className={`group px-3 py-3 text-2xl rounded-full flex items-center justify-between w-3/6 border ${borderColor}`}
+      className={`group px-3 py-3 text-2xl rounded-full flex items-center justify-between border ${borderColor}`}
     >
       <p className="ml-6">{text}</p>
       <div

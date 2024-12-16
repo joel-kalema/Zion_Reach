@@ -13,10 +13,10 @@ const HeroSection = () => {
           <p className="text-lg md:text-xl leading-relaxed w-4/5 my-10">
             Empowering communities through sustainable solutions, innovation, and collaboration for a better tomorrow.
           </p>
-          <div className="mt-8">
+          <div className="mt-8 w-3/6">
             <HoverButton
               href="#learn-more"
-              text="Learn More"
+              text="Get Started"
               borderColor="border-[#fff]"
               circleColor="bg-[#FE8C12]"
             />

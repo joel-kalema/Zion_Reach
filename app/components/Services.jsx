@@ -1,5 +1,4 @@
 import Image from "next/image";
-import HoverButton from "@/components/reuseble/HoverButton";
 
 const Services = () => {
   return (
@@ -29,15 +28,6 @@ const Services = () => {
                 <p className="w-3/4">Developing modern, responsive websites to enhance your digital presence.</p>
               </div>
               <div className="sticky bottom-0 white-gradient-black-b h-[20rem] z-10"></div>
-            </div>
-
-            <div className="px-6">
-              <HoverButton
-                href="#learn-more"
-                text="Learn More"
-                borderColor="border-[#fff]"
-                circleColor="bg-[#159CED]"
-              />
             </div>
           </div>
           <div className=" h-[100vh] w-1/2 sticky top-0 overflow-hidden">
