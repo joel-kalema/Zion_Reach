@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import HoverButton from "@/components/reuseble/HoverButton";
-import CarouselCustomNavigation from '@/components/reuseble/caroucelle'
+import CarouselCustomNavigation from '@/components/reuseble/caroucelle';
+import { LuArrowUpRight } from "react-icons/lu";
 
 const HeroSection = () => {
   return (
@@ -16,7 +17,7 @@ const HeroSection = () => {
               <h1 className="text-5xl md:text-9xl font-bold">
                 Zion Reach
               </h1>
-              <p className="mb-4">we bring your imagination to life</p>
+              <p className="mb-4 flex items-center gap-2">we bring your imagination to life <LuArrowUpRight /></p>
             </div>
           </div>
           <div className="w-1/3"></div>
