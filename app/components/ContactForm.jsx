@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
@@ -27,7 +28,7 @@ const ContactForm = () => {
             placeholder="Your Name"
             value={formData.name}
             onChange={handleChange}
-            className="w-full p-4 mb-4 border rounded"
+            className="w-full p-4 mb-4 border-b"
             required
           />
           <input
@@ -36,7 +37,7 @@ const ContactForm = () => {
             placeholder="Your Email"
             value={formData.email}
             onChange={handleChange}
-            className="w-full p-4 mb-4 border rounded"
+            className="w-full p-4 mb-4 border-b"
             required
           />
           <textarea
@@ -44,7 +45,7 @@ const ContactForm = () => {
             placeholder="Your Message"
             value={formData.message}
             onChange={handleChange}
-            className="w-full p-4 mb-4 border rounded"
+            className="w-full p-4 mb-4 border-b"
             required
           />
           <button type="submit" className="bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-600">
@@ -52,6 +53,34 @@ const ContactForm = () => {
           </button>
         </form>
       </div>
+      
+      <div className="relative h-[50vh] mx-auto overflow-hidden z-10 flex py-10">
+          <div className="absolute left-0 white-gradient-left w-1/6 h-full z-30"></div>
+          <div className="absolute right-0 white-gradient-right w-1/6 h-full z-30"></div>
+          <div className="flex mx-auto w-1/6">
+            <Image src='/zoin1.png' layout="responsive" width={150} height={250} alt='zoin logo' quality={100} className="z-20" />
+            <Image src='/zoin2.png' layout="responsive" width={150} height={250} alt='zoin logo' quality={100} />
+          </div>
+          <div className="absolute top-0 left-0 flex items-center w-full h-full whitespace-nowrap scale-150">
+            <div className="flex animate-scroll relative">
+              {[...Array(5)].map((_, i) => (
+                <div
+                  key={i}
+                  className="m-0 text-8xl text-[#000] mx-8 transition-all duration-1000 ease-in-out z-10 font-semibold flex items-center gap-5"
+                >
+                  <p>we bring your imagination to life</p>
+                  <div className="relative w-[13rem] h-[6rem] overflow-hidden rounded-full">
+                    <Image src='/solution.jpg' layout="fill" objectFit="cover" alt="bay" quality={100} />
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      {/* <div className='flex flex-col justify-between items-center py-20'>
+        <Image src="/zoin3.png" alt="Zion Reach Logo" width={250} height={250} className=""/>
+        <h1 className='font-bold text-8xl'>Zoin Reach</h1>
+      </div> */}
     </section>
   );
 };

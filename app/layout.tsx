@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 // import Header from './components/Header';
 import Footer from './components/Footer';
-import { BsListNested } from "react-icons/bs";
+// import { BsListNested } from "react-icons/bs";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,7 +25,7 @@ export default function RootLayout({
       </head>
       <body className="antialiased font-clash">
         {/* <Header /> */}
-        <div className="text-xl bg-white px-6 py-2 fixed bottom-0 left-0 z-50 flex items-center justify-between gap-4">MENU <BsListNested /></div>
+        {/* <div className="text-xl bg-white px-6 py-2 fixed bottom-0 left-0 z-50 flex items-center justify-between gap-4">MENU <BsListNested /></div> */}
         <main>{children}</main>
         <Footer />
       </body>
