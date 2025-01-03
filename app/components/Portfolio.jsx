@@ -103,20 +103,23 @@ const Portfolio = () => {
           <p className="text-7xl text-[#8e8e8e]">Explore our best works</p>
         </div>
 
-        <ParallaxProvider>
-          <div className="flex overflow-hidden h-[150vh]">
+        {/* <ParallaxProvider>
+          <div className="flex overflow-hidden h-[150vh] relative">
             <ParallaxImageSection images={cbtImages} speed={60} marginTop="-mt-96" />
             <ParallaxImageSection images={qavahImages} speed={0} />
             <ParallaxImageSection images={cbtImages} speed={30} marginTop="-mt-60" />
+            <div className='absolute bottom-0 h-[100dvh] w-full white-gradient-t'>
+              <div></div>
+            </div>
           </div>
-        </ParallaxProvider>
+        </ParallaxProvider> */}
 
         <div className="border-y p-16">
           <p className="text-7xl text-[#8e8e8e]">Responsive Web-sites</p>
         </div>
 
         <div className="flex flex-wrap">
-          {["CBT Ministry", "Qavah Group", "RAMAH Institute", "CBT Ministry", "Qavah Group", "RAMAH Institute"].map((title, index) => (
+          {["CBT Ministry", "Qavah Group", "RAMAH Institute"].map((title, index) => (
             <div key={index} className="w-1/3 h-[25rem] border">
               <div className="h-[70%] border-b"></div>
               <div className="h-[30%] p-4">
