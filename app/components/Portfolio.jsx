@@ -103,16 +103,16 @@ const Portfolio = () => {
           <p className="text-7xl text-[#8e8e8e]">Explore our best works</p>
         </div>
 
-        {/* <ParallaxProvider>
-          <div className="flex overflow-hidden h-[150vh] relative">
+        <ParallaxProvider>
+          <div className="flex overflow-hidden h-[120vh] relative">
             <ParallaxImageSection images={cbtImages} speed={60} marginTop="-mt-96" />
             <ParallaxImageSection images={qavahImages} speed={0} />
             <ParallaxImageSection images={cbtImages} speed={30} marginTop="-mt-60" />
-            <div className='absolute bottom-0 h-[100dvh] w-full white-gradient-t'>
+            {/* <div className='absolute bottom-0 h-[100dvh] w-full white-gradient-t'>
               <div></div>
-            </div>
+            </div> */}
           </div>
-        </ParallaxProvider> */}
+        </ParallaxProvider>
 
         <div className="border-y p-16">
           <p className="text-7xl text-[#8e8e8e]">Responsive Web-sites</p>
