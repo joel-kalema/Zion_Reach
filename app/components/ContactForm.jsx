@@ -24,7 +24,7 @@ const ContactForm = () => {
         <form onSubmit={handleSubmit} className="max-w-xl mx-auto">
           <input
             type="text"
-            name="name"
+            name="Name"
             placeholder="Your Name"
             value={formData.name}
             onChange={handleChange}
@@ -33,7 +33,7 @@ const ContactForm = () => {
           />
           <input
             type="email"
-            name="email"
+            name="Email"
             placeholder="Your Email"
             value={formData.email}
             onChange={handleChange}
@@ -41,7 +41,7 @@ const ContactForm = () => {
             required
           />
           <textarea
-            name="message"
+            name="Message"
             placeholder="Your Message"
             value={formData.message}
             onChange={handleChange}
