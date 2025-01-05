@@ -17,7 +17,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Add Clash Display font via link */}
         <link
           href="https://api.fontshare.com/v2/css?f[]=clash-display@300,400,500,600,700&display=swap"
           rel="stylesheet"
