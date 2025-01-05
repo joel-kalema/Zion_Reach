@@ -108,9 +108,6 @@ const Portfolio = () => {
             <ParallaxImageSection images={cbtImages} speed={60} marginTop="-mt-96" />
             <ParallaxImageSection images={qavahImages} speed={0} />
             <ParallaxImageSection images={cbtImages} speed={30} marginTop="-mt-60" />
-            {/* <div className='absolute bottom-0 h-[100dvh] w-full white-gradient-t'>
-              <div></div>
-            </div> */}
           </div>
         </ParallaxProvider>
 

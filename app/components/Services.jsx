@@ -5,7 +5,6 @@ const Services = () => {
     <section id="services" className="">
       <div className="bg-[#28292A] text-[#fff] relative z-10 w-full">
         <div className="flex">
-          {/* <div className="text-border-rotate text-8xl -mb-20 z-20 -rotate-90 absolute -left-52 top-80">Zion Reach</div> */}
           <div className="w-1/2 pl-20 py-16 relative">
             <div className="p-6 pb-28 bg-[#28292A] white-gradient-black-t sticky top-0 mb-20">
               <h2 className="text-3xl font-bold mb-6 text-[#159CED]">Our Services</h2>
