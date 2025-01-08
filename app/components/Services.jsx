@@ -12,28 +12,28 @@ const socials = [
     icon: <PiInstagramLogoLight />
   },
   {
-    name: "Tiktok",
-    icon: <PiTiktokLogoLight />
+    name: "Linkedin",
+    icon: <PiLinkedinLogoThin />
   },
   {
-    name: "Tiktok",
-    icon: <PiTiktokLogoLight />
+    name: "Facebook",
+    icon: <PiFacebookLogoThin />
   },
   {
-    name: "Tiktok",
-    icon: <PiTiktokLogoLight />
+    name: "Snapchat",
+    icon: <PiSnapchatLogoLight />
   },
   {
-    name: "Tiktok",
-    icon: <PiTiktokLogoLight />
+    name: "Youtube",
+    icon: <PiYoutubeLogo />
   },
   {
-    name: "Tiktok",
-    icon: <PiTiktokLogoLight />
+    name: "Threads",
+    icon: <PiThreadsLogo />
   },
   {
-    name: "Tiktok",
-    icon: <PiTiktokLogoLight />
+    name: "X",
+    icon: <RiTwitterXFill />
   }
 ]
 
@@ -64,7 +64,7 @@ const Services = () => {
               <div className="border w-20 h-20 rounded-full flex justify-center items-center">
                 <div className="w-12 h-12 bg-black rounded-full"></div>
               </div>
-              <p className="text-xl">12 Years of experience</p>
+              <p className="text-xl">6 Years of experience</p>
             </div>
 
             <div className="flex items-center gap-10 border-y">
