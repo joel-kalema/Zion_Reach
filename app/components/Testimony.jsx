@@ -22,18 +22,18 @@ const Testimony = () => {
   ];
 
   return (
-    <section className="bg-[#055DE2] py-40 px-20" id="testimonials">
+    <section className="bg-[#28292A] py-40 px-20" id="testimonials">
       <h2 className="text-3xl font-bold text-[#fff] mb-6">Client Testimonials</h2>
-      <h1 className="mb-16 text-6xl text-[#fff]">What Customers Says?</h1>
+      <h1 className="mb-16 text-xl text-[#fff]">What Customers Says?</h1>
       <div className="flex gap-10 justify-between">
         {testimonials.map((testimonial, index) => (
           <div
             key={index}
-            className="bg-white p-4 border "
+            className="bg-[#2e2f30] p-4 shadow-lg"
           >
-            <div className="border p-4">
-              <p className="text-gray-600 italic mb-4">&quot;{testimonial.message}&quot;</p>
-              <h3 className="text-lg font-semibold text-[]">{testimonial.name}</h3>
+            <div className="p-4">
+              <p className="text-gray-300 italic mb-4">&quot;{testimonial.message}&quot;</p>
+              <h3 className="text-lg font-semibold text-[#fff]">{testimonial.name}</h3>
               <p className="text-sm text-gray-500 mb-6">{testimonial.role}</p>
 
               <div className="relative w-[8rem] h-[8rem] overflow-hidden">

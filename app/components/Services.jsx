@@ -1,46 +1,85 @@
-"use client";
-import { useEffect } from 'react';
-import AOS from "aos";
 import Image from "next/image";
+import { PiTiktokLogoLight, PiInstagramLogoLight, PiLinkedinLogoThin, PiFacebookLogoThin, PiSnapchatLogoLight, PiYoutubeLogo, PiThreadsLogo } from "react-icons/pi";
+import { RiTwitterXFill } from "react-icons/ri";
+
+const socials = [
+  {
+    name: "Tiktok",
+    icon: <PiTiktokLogoLight />
+  },
+  {
+    name: "Instagram",
+    icon: <PiInstagramLogoLight />
+  },
+  {
+    name: "Tiktok",
+    icon: <PiTiktokLogoLight />
+  },
+  {
+    name: "Tiktok",
+    icon: <PiTiktokLogoLight />
+  },
+  {
+    name: "Tiktok",
+    icon: <PiTiktokLogoLight />
+  },
+  {
+    name: "Tiktok",
+    icon: <PiTiktokLogoLight />
+  },
+  {
+    name: "Tiktok",
+    icon: <PiTiktokLogoLight />
+  },
+  {
+    name: "Tiktok",
+    icon: <PiTiktokLogoLight />
+  }
+]
+
 
 const Services = () => {
-    useEffect(() => {
-      AOS.init();
-      AOS.refresh();
-    }, []);
-  
   return (
     <section id="services" className="">
-      <div className="bg-[#28292A] text-[#fff] relative z-10 w-full">
-        <div className="flex">
-          <div className="w-1/2 pl-20 pt-16 relative">
-            <div className="p-6 pb-28 bg-[#28292A] white-gradient-black-t sticky top-0 mb-20" data-aos="fade-up"
-     data-aos-duration="2000">
-              <h2 className="text-3xl font-bold mb-6 text-[#159CED]">Our Services</h2>
-              <p className="text-2xl mb-6 w-5/6">
-                Zion Reach specializes in branding, website development, social media management,
-                online advertising, graphic design, and short video production for businesses and churches.
-              </p>
+      <div className="w-full h-20"></div>
+      <div className="w-5/6 border-x mx-auto h-full">
+        <div className="border-y text-4xl font-bold -py-2">
+          <p className="w-3/6">Top Social media platforms for marketing</p>
+        </div>
+        <div className="flex flex-wrap justify-between my-20">
+          {
+            socials.map((item) => (
+              <div className="w-1/4 py-10 border flex items-center flex-col">
+                <div className="text-3xl">{item.icon}</div>
+                <p className="font-bold">{item.name}</p>
+              </div>
+            ))
+          }
+        </div>
+
+        <div className="border-y -py-2">
+          <p className="w-3/6 text-4xl font-bold mb-20">Expert the best marketing services</p>
+          <div className="flex gap-20">
+            <div className="flex items-center gap-10 border-y">
+              <div className="border w-20 h-20 rounded-full flex justify-center items-center">
+                <div className="w-12 h-12 bg-black rounded-full"></div>
+              </div>
+              <p className="text-xl">12 Years of experience</p>
             </div>
-            <div>
-              <div className="p-6 mb-20">
-                <h3 className="text-7xl">Branding</h3>
-                <p className="w-3/4">Creating impactful identities that resonate with your audience.</p>
+
+            <div className="flex items-center gap-10 border-y">
+              <div className="border w-20 h-20 rounded-full flex justify-center items-center">
+                <div className="w-12 h-12 bg-black rounded-full"></div>
               </div>
-              <div className="p-6 mb-20">
-                <h3 className="text-7xl">Social Media</h3>
-                <p className="w-3/4">Managing and growing your online audience through tailored strategies.</p>
-              </div>
-              <div className="p-6">
-                <h3 className="text-7xl">Websites</h3>
-                <p className="w-3/4">Developing modern, responsive websites to enhance your digital presence.</p>
-              </div>
-              <div className="sticky bottom-0 white-gradient-black-b h-[13rem] z-10"></div>
+              <p className="text-xl">82 Satisfaction clients</p>
             </div>
-          </div>
-          <div className=" h-[100vh] w-1/2 sticky top-0 overflow-hidden p-10">
-            <Image src="/service.png" layout="fill" objectFit="cover" alt="bay" quality={100} />
-            {/* <div className="text-border-rotate text-8xl mix-blend-difference -mb-20 -rotate-90 absolute -left-56 top-80">Zion Reach</div> */}
+            <div className="flex items-center gap-10 border-y">
+              <div className="border w-20 h-20 rounded-full flex justify-center items-center">
+                <div className="w-12 h-12 bg-black rounded-full"></div>
+              </div>
+              <p className="text-xl">275 Project completed</p>
+            </div>
+
           </div>
         </div>
       </div>
@@ -49,3 +88,36 @@ const Services = () => {
 };
 
 export default Services;
+
+
+{/* <div className="bg-[#28292A] text-[#fff] relative z-10 w-full">
+  <div className="flex">
+    <div className="w-1/2 pl-20 pt-16 relative">
+      <div className="p-6 pb-28 bg-[#28292A] white-gradient-black-t sticky top-0 mb-20">
+        <h2 className="text-3xl font-bold mb-6 text-[#159CED]">Our Services</h2>
+        <p className="text-2xl mb-6 w-5/6">
+          Zion Reach specializes in branding, website development, social media management,
+          online advertising, graphic design, and short video production for businesses and churches.
+        </p>
+      </div>
+      <div>
+        <div className="p-6 mb-20">
+          <h3 className="text-7xl">Branding</h3>
+          <p className="w-3/4">Creating impactful identities that resonate with your audience.</p>
+        </div>
+        <div className="p-6 mb-20">
+          <h3 className="text-7xl">Social Media</h3>
+          <p className="w-3/4">Managing and growing your online audience through tailored strategies.</p>
+        </div>
+        <div className="p-6">
+          <h3 className="text-7xl">Websites</h3>
+          <p className="w-3/4">Developing modern, responsive websites to enhance your digital presence.</p>
+        </div>
+        <div className="sticky bottom-0 white-gradient-black-b h-[13rem] z-10"></div>
+      </div>
+    </div>
+    <div className=" h-[100vh] w-1/2 sticky top-0 overflow-hidden p-10">
+      <Image src="/service.png" layout="fill" objectFit="cover" alt="bay" quality={100} />
+    </div>
+  </div>
+</div> */}

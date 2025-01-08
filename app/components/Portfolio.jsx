@@ -40,31 +40,20 @@ const Portfolio = () => {
       <div className="">
         <div className="h-[100vh] relative flex flex-wrap">
           <div className="w-1/2 h-[50%] border-b border-r overflow-hidden">
-            <div className="font-bold text-[#28292a11] text-[12rem] pl-20 p-10 mt-[20%]">Reach</div>
+            {/* <div className="font-bold text-[#28292a11] text-[12rem] pl-20 p-10 mt-[20%]">Reach</div> */}
           </div>
           <div className="w-1/2 h-[50%] border-b border-r"></div>
           <div className="w-1/2 h-[50%] border-b border-r"></div>
           <div className="w-1/2 h-[50%] border-b border-r overflow-hidden">
-            <div className="font-bold text-[#28292a11] text-[12rem] pl-20 p-10 mt-[20%]">Zion</div>
+            {/* <div className="font-bold text-[#28292a11] text-[12rem] pl-20 p-10 mt-[20%]">Zion</div> */}
           </div>
 
           <div className="absolute top-0 w-full left-0">
-            <div className="w-4/6 relative font-semibold z-30 text-7xl text-center mx-auto my-40">
-              Revolutionize   <span data-aos="zoom-in-down">creative work</span> for companies<span className='mx-10'></span> with <span data-aos="zoom-in-down">style</span> and <span data-aos="zoom-in-down">substance</span>
-            </div>
-
-            <div className="px-20 py-10 flex justify-between z-50">
-              <p className="w-2/6 text-lg mix-blend-difference" data-aos="zoom-in">From bold ideas to stunning realities,
+            <div className="w-3/6 relative z-30 text-5xl mx-auto my-60">
+              <p className='font-semibold'>Revolutionize   <span data-aos="zoom-in-down">creative work</span> for companies with <span data-aos="zoom-in-down">style</span> and <span data-aos="zoom-in-down">substance</span></p>
+              <p className="w-4/6 text-lg mix-blend-difference mt-10" data-aos="zoom-in">From bold ideas to stunning realities,
                 we design, develop, and deliver
                 experiences that inspire and captivate.</p>
-              <div className="w-2/6 pl-28 relative z-40">
-                <HoverButton
-                  href="#learn-more"
-                  text="Get Started"
-                  borderColor="border-[#000]"
-                  circleColor="bg-[#055DE2]"
-                />
-              </div>
             </div>
           </div>
 
@@ -95,12 +84,35 @@ const Portfolio = () => {
               </div>
             </div>
           </div>
-
         </div>
 
-        <div className="border-y px-16 py-20">
+        <div className="relative h-[50vh] mx-auto overflow-hidden z-10 flex py-10">
+          <div className="absolute left-0 white-gradient-left w-1/6 h-full z-30"></div>
+          <div className="absolute right-0 white-gradient-right w-1/6 h-full z-30"></div>
+          <div className="flex mx-auto w-1/6">
+            <Image src='/zoin1.png' layout="responsive" width={150} height={250} alt='zoin logo' quality={100} className="z-20" />
+            <Image src='/zoin2.png' layout="responsive" width={150} height={250} alt='zoin logo' quality={100} />
+          </div>
+          <div className="absolute top-0 left-0 flex items-center w-full h-full whitespace-nowrap scale-150">
+            <div className="flex animate-scroll relative">
+              {[...Array(5)].map((_, i) => (
+                <div
+                  key={i}
+                  className="m-0 text-3xl text-[#000] mx-8 transition-all duration-1000 ease-in-out z-10 font-semibold flex items-center gap-5"
+                >
+                  <p>we bring your imagination to life</p>
+                  <div className="relative w-[13rem] h-[6rem] overflow-hidden rounded-full">
+                    <Image src='/solution.jpg' layout="fill" objectFit="cover" alt="bay" quality={100} />
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div className="border-y px-28 py-20">
           <h2 className="text-3xl font-bold mb-6">Our Portfolio</h2>
-          <p className="text-lg text-[#8e8e8e]">Explore our best works</p>
+          <p className="text-xl text-[#8e8e8e]">Explore our best works</p>
         </div>
 
         <ParallaxProvider>
@@ -112,7 +124,7 @@ const Portfolio = () => {
         </ParallaxProvider>
 
         <div className="border-y py-16 w-5/6 mx-auto">
-          <p className="text-7xl text-[#8e8e8e]">Responsive Web-sites</p>
+          <p className="text-xl text-[#8e8e8e]">Responsive Web-sites</p>
         </div>
 
         <div className="flex flex-wrap">
