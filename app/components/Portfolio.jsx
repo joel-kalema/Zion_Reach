@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import AOS from "aos";
 import Image from "next/image";
 import { ParallaxProvider, Parallax } from "react-scroll-parallax";
-import HoverButton from "@/components/reuseble/HoverButton";
+// import HoverButton from "@/components/reuseble/HoverButton";
 import { BsArrowRight } from 'react-icons/bs';
 import Link from "next/link";
 

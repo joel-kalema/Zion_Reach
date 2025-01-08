@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import { PiTiktokLogoLight, PiInstagramLogoLight, PiLinkedinLogoThin, PiFacebookLogoThin, PiSnapchatLogoLight, PiYoutubeLogo, PiThreadsLogo } from "react-icons/pi";
 import { RiTwitterXFill } from "react-icons/ri";
 
