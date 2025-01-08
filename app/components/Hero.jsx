@@ -31,8 +31,8 @@ const HeroSection = () => {
               <Image src="/zoin3.png" alt="Zion Reach Logo" width={300} height={260} quality={70} />
             </div>
           </div>
-          <div className="border-l border-t border-[#4d4e50] w-1/3 p-6 bg-[#28292A] relative z-40">
-            <p className="text-lg md:text-xl leading-relaxed w-4/5 my-10">
+          <div className="border-l border-t border-[#4d4e50] w-1/3 p-10 bg-[#28292A] relative z-40">
+            <p className="text-lg md:text-md leading-relaxed w-5/6 my-10">
               Empowering communities through sustainable solutions, innovation, and collaboration for a better tomorrow.
             </p>
             <div className="mt-8 w-4/6 relative">

@@ -54,7 +54,7 @@ const Portfolio = () => {
             </div>
 
             <div className="px-20 py-10 flex justify-between z-50">
-              <p className="w-2/6 text-lg mix-blend-difference" data-aos="zoom-in-down">From bold ideas to stunning realities,
+              <p className="w-2/6 text-lg mix-blend-difference" data-aos="zoom-in">From bold ideas to stunning realities,
                 we design, develop, and deliver
                 experiences that inspire and captivate.</p>
               <div className="w-2/6 pl-28 relative z-40">
@@ -62,7 +62,7 @@ const Portfolio = () => {
                   href="#learn-more"
                   text="Get Started"
                   borderColor="border-[#000]"
-                  circleColor="bg-[#159CED]"
+                  circleColor="bg-[#055DE2]"
                 />
               </div>
             </div>
@@ -99,19 +99,19 @@ const Portfolio = () => {
         </div>
 
         <div className="border-y px-16 py-20">
-          <h2 className="text-3xl font-bold text-[#159CED] mb-6">Our Portfolio</h2>
-          <p className="text-7xl text-[#8e8e8e]">Explore our best works</p>
+          <h2 className="text-3xl font-bold mb-6">Our Portfolio</h2>
+          <p className="text-lg text-[#8e8e8e]">Explore our best works</p>
         </div>
 
         <ParallaxProvider>
-          <div className="flex overflow-hidden h-[120vh] relative">
+          <div className="flex overflow-hidden h-[120vh] relative w-5/6 mx-auto">
             <ParallaxImageSection images={cbtImages} speed={60} marginTop="-mt-96" />
             <ParallaxImageSection images={qavahImages} speed={0} />
             <ParallaxImageSection images={cbtImages} speed={30} marginTop="-mt-60" />
           </div>
         </ParallaxProvider>
 
-        <div className="border-y p-16">
+        <div className="border-y py-16 w-5/6 mx-auto">
           <p className="text-7xl text-[#8e8e8e]">Responsive Web-sites</p>
         </div>
 

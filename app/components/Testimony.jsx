@@ -22,7 +22,7 @@ const Testimony = () => {
   ];
 
   return (
-    <section className="bg-[#8F78EA] py-40 px-20" id="testimonials">
+    <section className="bg-[#055DE2] py-40 px-20" id="testimonials">
       <h2 className="text-3xl font-bold text-[#fff] mb-6">Client Testimonials</h2>
       <h1 className="mb-16 text-6xl text-[#fff]">What Customers Says?</h1>
       <div className="flex gap-10 justify-between">
