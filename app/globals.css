@@ -20,7 +20,6 @@ body {
   color: white;
   color: transparent;
   -webkit-text-stroke: 1px rgba(0, 0, 0, 0.282);
-  /* Border color and size */
 }
 
 .text-border-rotate {
@@ -28,7 +27,6 @@ body {
   color: white;
   color: transparent;
   -webkit-text-stroke: 1px #FE8C12;
-  /* Border color and size */
 }
 
 .bg_1 {
@@ -126,17 +124,17 @@ background: linear-gradient(0deg, rgba(40,41,42,0) 0%, rgba(40,41,42,1) 37%);
   .auto-scroll-container {
     overflow: hidden;
     position: relative;
-    height: 100%; /* Ensures full container height */
+    height: 100%;
   }
 
   .auto-scroll-content {
-    animation: scroll 30s linear infinite; /* Smooth continuous scrolling */
+    animation: scroll 30s linear infinite;
   }
 
   .auto-scroll-content > div {
     display: flex;
     justify-content: space-around;
-    gap: 20px; /* Consistent spacing between images */
+    gap: 20px; 
   }
 
   .white-gradient-black-t {
@@ -149,28 +147,25 @@ background: linear-gradient(0deg, rgba(40,41,42,0) 0%, rgba(40,41,42,1) 37%);
 }
 
 @layer utilities {
-  /* Keyframes for bouncing scroll (up and down) */
   @keyframes slow-scroll {
     0% {
-      transform: translateY(0); /* Start at the initial position */
+      transform: translateY(0);
     }
     50% {
-      transform: translateY(-20%); /* Move up */
+      transform: translateY(-20%);
     }
     100% {
-      transform: translateY(0); /* Return to the initial position */
+      transform: translateY(0);
     }
   }
 
-  /* Slow Scroll Container */
   .slow-scroll-container {
     overflow: hidden;
     height: 100%;
     position: relative;
   }
 
-  /* Slow Scroll Content (Custom Animation) */
   .slow-scroll-content {
-    animation: slow-scroll 20s ease-in-out infinite; /* Smooth up and down scrolling */
+    animation: slow-scroll 20s ease-in-out infinite; 
   }
 }

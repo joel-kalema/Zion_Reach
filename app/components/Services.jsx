@@ -40,7 +40,7 @@ const socials = [
 
 const Services = () => {
   return (
-    <section id="services" className="my-40 relative overflow-hidden">
+    <section id="services" className="py-40 relative border-b overflow-hidden">
       <div className="w-[30rem] h-[40rem] bg_1 rounded-full blur-3xl absolute z-10 top-[40%] right-0 opacity-40"></div>
       <div className="w-full h-20"></div>
       <div className="w-5/6 border-x mx-auto h-full relative z-20">
@@ -59,11 +59,11 @@ const Services = () => {
               <Image src="/web.jpg" layout="fill" objectFit="cover" alt="bay" quality={100} />
             </div>
             <div className="h-full w-2/5 flex justify-center items-center">
-              <div className="flex w-40 h-40 flex-wrap">
-                <div className="w-20 h-20 p-4 border"><div className="bg-[#FE8C12] h-full w-full"></div></div>
+              <div className="flex w-40 h-40 gap-2 flex-wrap">
+                <div className="w-20 h-20 p-4 border"><div className="bg-[#a8a8a8] h-full w-full"></div></div>
                 <div className="w-20 h-20 p-4 border-2 border-[#FE8C12]"><div className="bg-[#FE8C12] h-full w-full"></div></div>
                 <div className="w-20 h-20 p-4 border"><div className="bg-[#a8a8a8] h-full w-full"></div></div>
-                <div className="w-20 h-20 p-4 border"><div className="bg-[#FE8C12] h-full w-full"></div></div>
+                <div className="w-20 h-20 p-4 border-2 border-[#159CED]"><div className="bg-[#159CED] h-full w-full"></div></div>
               </div>
             </div>
           </div>
@@ -78,7 +78,7 @@ const Services = () => {
             <p className="w-4/6">Zion Reach is dedicated to providing creative communication services that make a difference. We help our clients grow through professional content creation, strategic marketing, and building authentic connections with their audiences.</p>
           </div>
         </div>
-        <div className="flex flex-wrap justify-between my-20">
+        <div className="flex flex-wrap justify-between my-20 bg-white">
           {
             socials.map((item, index) => (
               <div key={index} className="w-1/4 py-10 border flex items-center flex-col">
@@ -89,7 +89,7 @@ const Services = () => {
           }
         </div>
 
-        <div className="border-y -py-2">
+        <div className="border-y -py-2 bg-white">
           <div className="border-y flex gap-10">
             <p className="font-bold border-t-4 border-[#FE8C12] text-[#FE8C12]">ABOUT</p>
             <div>

@@ -46,14 +46,20 @@ const Portfolio = () => {
           <div className="w-1/2 h-[50%] border-b border-r overflow-hidden">
           </div>
 
-          <div className="absolute top-0 w-full left-0">
-            <div className="w-3/6 relative z-30 text-5xl mx-auto my-60">
-              <p className='font-semibold'>Revolutionize   <span data-aos="zoom-in-down">creative work</span> for companies with <span data-aos="zoom-in-down">style</span> and <span data-aos="zoom-in-down">substance</span></p>
-              <p className="w-4/6 text-lg mix-blend-difference mt-10" data-aos="zoom-in">From bold ideas to stunning realities,
-                we design, develop, and deliver
-                experiences that inspire and captivate.</p>
+          <ParallaxProvider>
+            <div className="absolute top-0 w-full left-0">
+              <div className="w-3/6 relative z-30 text-5xl mx-auto my-60">
+                <Parallax speed={-15}>
+                  <p className='font-semibold'>Revolutionize   <span data-aos="zoom-in-down">creative work</span> for companies with <span data-aos="zoom-in-down">style</span> and <span data-aos="zoom-in-down">substance</span></p>
+                </Parallax>
+                <Parallax speed={-15}>
+                  <p className="w-4/6 text-lg mix-blend-difference mt-20">From bold ideas to stunning realities,
+                    we design, develop, and deliver
+                    experiences that inspire and captivate.</p>
+                </Parallax>
+              </div>
             </div>
-          </div>
+          </ParallaxProvider>
 
           <div className="absolute top-0 h-full w-full overflow-hidden z-20 group">
             <div className="slow-scroll-container h-full">
