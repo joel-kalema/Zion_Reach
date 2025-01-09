@@ -1,4 +1,4 @@
-// import Image from "next/image";
+import Image from "next/image";
 import { PiTiktokLogoLight, PiInstagramLogoLight, PiLinkedinLogoThin, PiFacebookLogoThin, PiSnapchatLogoLight, PiYoutubeLogo, PiThreadsLogo } from "react-icons/pi";
 import { RiTwitterXFill } from "react-icons/ri";
 
@@ -43,6 +43,33 @@ const Services = () => {
     <section id="services" className="my-40">
       <div className="w-full h-20"></div>
       <div className="w-5/6 border-x mx-auto h-full">
+
+        <div className="border-t -py-2">
+          <div className="border-y flex gap-10">
+            <p className="font-bold border-t-4 border-[#FE8C12] text-[#FE8C12]">WEBSITES</p>
+            <div>
+              <h1 className="w-5/6 text-4xl font-bold mb-10">Developing modern, responsive websites to enhance your digital presence.</h1>
+              <p>Innovative designs with optimized performance to deliver seamless, responsive interfaces.</p>
+            </div>
+          </div>
+          <div className="h-20 border-b"></div>
+          <div className="flex h-72">
+            <div className="h-full relative w-3/5 border-l">
+              <Image src="/web.jpg" layout="fill" objectFit="cover" alt="bay" quality={100} />
+            </div>
+            <div className="h-full w-2/5 flex justify-center items-center">
+              <div className="flex w-40 h-40 flex-wrap">
+                <div className="w-20 h-20 p-4 border"><div className="bg-[#FE8C12] h-full w-full"></div></div>
+                <div className="w-20 h-20 p-4 border-2 border-[#FE8C12]"><div className="bg-[#FE8C12] h-full w-full"></div></div>
+                <div className="w-20 h-20 p-4 border"><div className="bg-[#a8a8a8] h-full w-full"></div></div>
+                <div className="w-20 h-20 p-4 border"><div className="bg-[#FE8C12] h-full w-full"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div className="h-40 border-t"></div>
+        </div>
+
         <div className="border-y flex gap-10">
           <p className="font-bold border-t-4 border-[#FE8C12] text-[#FE8C12]">SOCIALS</p>
           <div>
@@ -71,25 +98,25 @@ const Services = () => {
           </div>
           <p className="w-3/6 text-4xl font-bold mb-20"></p>
           <div className="flex">
-            <div className="flex items-center w-1/3 gap-10 border-y">
-              <div className="border w-20 h-20 rounded-full flex justify-center items-center">
-                <div className="w-12 h-12 bg-black rounded-full"></div>
+            <div className="flex items-center w-1/3 gap-4 border-y">
+              <div className="border-2 border-[#FE8C12] w-20 h-20 rounded-full flex justify-center items-center">
+                <div className="w-8 h-8 bg-[#FE8C12] rounded-full"></div>
               </div>
-              <p className="text-xl">6 Years of experience</p>
+              <p className="text-xl"><span className="text-6xl">6</span>Years of experience</p>
             </div>
 
-            <div className="flex items-center w-1/3 gap-10 border-y">
-              <div className="border w-20 h-20 rounded-full flex justify-center items-center">
-                <div className="w-12 h-12 bg-black rounded-full"></div>
+            <div className="flex items-center w-1/3 gap-4 border-y">
+              <div className="border-2 border-[#FE8C12] w-20 h-20 rounded-full flex justify-center items-center">
+                <div className="w-8 h-8 bg-[#FE8C12] rounded-full"></div>
               </div>
-              <p className="text-xl">82 Satisfaction clients</p>
+              <p className="text-xl"><span className="text-6xl">82</span>Satisfaction clients</p>
             </div>
 
-            <div className="flex items-center w-1/3 gap-10 border-y">
-              <div className="border w-20 h-20 rounded-full flex justify-center items-center">
-                <div className="w-12 h-12 bg-black rounded-full"></div>
+            <div className="flex items-center w-1/3 gap-4 border-y">
+              <div className="border-2 border-[#FE8C12] w-20 h-20 rounded-full flex justify-center items-center">
+                <div className="w-8 h-8 bg-[#FE8C12] rounded-full"></div>
               </div>
-              <p className="text-xl">275 Project completed</p>
+              <p className="text-xl"><span className="text-6xl">275</span> Project completed</p>
             </div>
 
           </div>
