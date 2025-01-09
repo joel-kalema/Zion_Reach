@@ -40,11 +40,15 @@ const socials = [
 
 const Services = () => {
   return (
-    <section id="services" className="">
+    <section id="services" className="my-40">
       <div className="w-full h-20"></div>
       <div className="w-5/6 border-x mx-auto h-full">
-        <div className="border-y text-4xl font-bold -py-2">
-          <p className="w-3/6">Top Social media platforms for marketing</p>
+        <div className="border-y flex gap-10">
+          <p className="font-bold border-t-4 border-[#FE8C12] text-[#FE8C12]">SOCIALS</p>
+          <div>
+            <h1 className="w-3/6  text-4xl font-bold mb-10">Top Social media platforms for marketing</h1>
+            <p className="w-4/6">Zion Reach is dedicated to providing creative communication services that make a difference. We help our clients grow through professional content creation, strategic marketing, and building authentic connections with their audiences.</p>
+          </div>
         </div>
         <div className="flex flex-wrap justify-between my-20">
           {
@@ -58,22 +62,30 @@ const Services = () => {
         </div>
 
         <div className="border-y -py-2">
-          <p className="w-3/6 text-4xl font-bold mb-20">Expert the best marketing services</p>
-          <div className="flex gap-20">
-            <div className="flex items-center gap-10 border-y">
+          <div className="border-y flex gap-10">
+            <p className="font-bold border-t-4 border-[#FE8C12] text-[#FE8C12]">ABOUT</p>
+            <div>
+              <h1 className="w-3/6  text-4xl font-bold mb-10">Expert the best marketing services</h1>
+              <p className="w-4/6">Zion Reach empowers businesses and churches with creative, impactful communication solutions. Through innovative marketing and professional content creation, we help connect audiences and drive growth.</p>
+            </div>
+          </div>
+          <p className="w-3/6 text-4xl font-bold mb-20"></p>
+          <div className="flex">
+            <div className="flex items-center w-1/3 gap-10 border-y">
               <div className="border w-20 h-20 rounded-full flex justify-center items-center">
                 <div className="w-12 h-12 bg-black rounded-full"></div>
               </div>
               <p className="text-xl">6 Years of experience</p>
             </div>
 
-            <div className="flex items-center gap-10 border-y">
+            <div className="flex items-center w-1/3 gap-10 border-y">
               <div className="border w-20 h-20 rounded-full flex justify-center items-center">
                 <div className="w-12 h-12 bg-black rounded-full"></div>
               </div>
               <p className="text-xl">82 Satisfaction clients</p>
             </div>
-            <div className="flex items-center gap-10 border-y">
+
+            <div className="flex items-center w-1/3 gap-10 border-y">
               <div className="border w-20 h-20 rounded-full flex justify-center items-center">
                 <div className="w-12 h-12 bg-black rounded-full"></div>
               </div>

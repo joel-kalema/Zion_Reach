@@ -20,7 +20,7 @@ const ContactForm = () => {
   return (
     <section id="contact" className="flex items-center">
       <div className=" h-[100vh] w-1/2 sticky top-0 overflow-hidden p-10">
-        <Image src="/contact.png" layout="fill" objectFit="cover" alt="bay" quality={100} />
+        <Image src="/service.png" layout="fill" objectFit="cover" alt="bay" quality={100} />
         {/* <div className="text-border-rotate text-8xl mix-blend-difference -mb-20 -rotate-90 absolute -left-56 top-80">Zion Reach</div> */}
       </div>
       <div className="container mx-auto text-center w-1/2">
