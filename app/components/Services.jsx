@@ -52,8 +52,8 @@ const Services = () => {
         </div>
         <div className="flex flex-wrap justify-between my-20">
           {
-            socials.map((item) => (
-              <div className="w-1/4 py-10 border flex items-center flex-col">
+            socials.map((item, index) => (
+              <div key={index} className="w-1/4 py-10 border flex items-center flex-col">
                 <div className="text-3xl">{item.icon}</div>
                 <p className="font-bold">{item.name}</p>
               </div>
