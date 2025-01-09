@@ -40,9 +40,10 @@ const socials = [
 
 const Services = () => {
   return (
-    <section id="services" className="my-40">
+    <section id="services" className="my-40 relative overflow-hidden">
+      <div className="w-[30rem] h-[40rem] bg_1 rounded-full blur-3xl absolute z-10 top-[40%] right-0 opacity-40"></div>
       <div className="w-full h-20"></div>
-      <div className="w-5/6 border-x mx-auto h-full">
+      <div className="w-5/6 border-x mx-auto h-full relative z-20">
 
         <div className="border-t -py-2">
           <div className="border-y flex gap-10">

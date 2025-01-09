@@ -31,6 +31,11 @@ body {
   /* Border color and size */
 }
 
+.bg_1 {
+  background: rgb(21,156,237);
+background: linear-gradient(126deg, rgba(21,156,237,1) 0%, rgba(254,140,18,1) 100%);
+}
+
 .white-gradient-b {
   background: rgb(255, 255, 255);
   background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 45%);

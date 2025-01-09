@@ -38,14 +38,12 @@ const Portfolio = () => {
   return (
     <section id="portfolio">
       <div className="">
-        <div className="h-[100vh] relative flex flex-wrap">
+        <div className="h-[120vh] relative flex flex-wrap">
           <div className="w-1/2 h-[50%] border-b border-r overflow-hidden">
-            {/* <div className="font-bold text-[#28292a11] text-[12rem] pl-20 p-10 mt-[20%]">Reach</div> */}
           </div>
           <div className="w-1/2 h-[50%] border-b border-r"></div>
           <div className="w-1/2 h-[50%] border-b border-r"></div>
           <div className="w-1/2 h-[50%] border-b border-r overflow-hidden">
-            {/* <div className="font-bold text-[#28292a11] text-[12rem] pl-20 p-10 mt-[20%]">Zion</div> */}
           </div>
 
           <div className="absolute top-0 w-full left-0">
@@ -86,12 +84,12 @@ const Portfolio = () => {
           </div>
         </div>
 
-        <div className="relative h-[50vh] mx-auto overflow-hidden z-10 flex py-10">
+        <div className="relative h-[40vh] mx-auto overflow-hidden z-10 flex py-10">
           <div className="absolute left-0 white-gradient-left w-1/6 h-full z-30"></div>
           <div className="absolute right-0 white-gradient-right w-1/6 h-full z-30"></div>
           <div className="flex mx-auto w-1/6">
-            <Image src='/zoin1.png' layout="responsive" width={150} height={250} alt='zoin logo' quality={100} className="z-20" />
-            <Image src='/zoin2.png' layout="responsive" width={150} height={250} alt='zoin logo' quality={100} />
+            <Image src='/zoin1.png' layout="responsive" width={100} height={200} alt='zoin logo' quality={100} className="z-20" />
+            <Image src='/zoin2.png' layout="responsive" width={100} height={200} alt='zoin logo' quality={100} />
           </div>
           <div className="absolute top-0 left-0 flex items-center w-full h-full whitespace-nowrap scale-150">
             <div className="flex animate-scroll relative">
@@ -101,7 +99,7 @@ const Portfolio = () => {
                   className="m-0 text-3xl text-[#000] mx-8 transition-all duration-1000 ease-in-out z-10 font-semibold flex items-center gap-5"
                 >
                   <p>we bring your imagination to life</p>
-                  <div className="relative w-[13rem] h-[6rem] overflow-hidden rounded-full">
+                  <div className="relative w-[8rem] h-[4rem] overflow-hidden rounded-full">
                     <Image src='/solution.jpg' layout="fill" objectFit="cover" alt="bay" quality={100} />
                   </div>
                 </div>
