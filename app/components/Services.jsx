@@ -1,8 +1,6 @@
 import React, { useMemo } from "react";
 import dynamic from "next/dynamic";
 import CarouselCustomNavigation from "@/components/reuseble/caroucelle";
-
-// Dynamic import for icons to optimize bundle size
 const icons = {
   Tiktok: dynamic(() => import("react-icons/pi").then(mod => mod.PiTiktokLogoLight)),
   Instagram: dynamic(() => import("react-icons/pi").then(mod => mod.PiInstagramLogoLight)),
