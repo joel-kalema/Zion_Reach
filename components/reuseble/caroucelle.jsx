@@ -1,15 +1,15 @@
-'use client'
+'use client';
 
 import { Carousel } from "@material-tailwind/react";
 import Image from "next/image";
 
-export default function CarouselCustomNavigation() {
+const CarouselCustomNavigation = ({ images, autoplay = true, autoplayDelay = 2000, transitionDuration = 1 }) => {
     return (
         <Carousel
             className=""
-            transition={{ duration: 1 }}
-            autoplay={true}
-            autoplayDelay={2000}
+            transition={{ duration: transitionDuration }}
+            autoplay={autoplay}
+            autoplayDelay={autoplayDelay}
             loop={true}
             prevArrow={false}
             nextArrow={false}
@@ -18,26 +18,22 @@ export default function CarouselCustomNavigation() {
                     {new Array(length).fill("").map((_, i) => (
                         <span
                             key={i}
-                            className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${activeIndex === i ? "w-8 bg-white" : "w-4 bg-white/50"
-                                }`}
+                            className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${
+                                activeIndex === i ? "w-8 bg-white" : "w-4 bg-white/50"
+                            }`}
                             onClick={() => setActiveIndex(i)}
                         />
                     ))}
                 </div>
             )}
         >
-            <div className=" w-full overflow-hidden">
-                <Image src="/image1.JPEG" layout="fill" objectFit="cover" alt="bay" quality={100} />
-            </div>
-            <div className=" w-full overflow-hidden">
-                <Image src="/image2.PNG" layout="fill" objectFit="cover" alt="bay" quality={100} />
-            </div>
-            <div className=" w-full overflow-hidden">
-                <Image src="/image3.PNG" layout="fill" objectFit="cover" alt="bay" quality={100} />
-            </div>
-            <div className=" w-full overflow-hidden">
-                <Image src="/image1.JPEG" layout="fill" objectFit="cover" alt="bay" quality={100} />
-            </div>
+            {images.map((imageSrc, index) => (
+                <div key={index} className="w-full overflow-hidden">
+                    <Image src={imageSrc} layout="fill" objectFit="cover" alt={`carousel-image-${index}`} quality={100} />
+                </div>
+            ))}
         </Carousel>
     );
-}
+};
+
+export default CarouselCustomNavigation;

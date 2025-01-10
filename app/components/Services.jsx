@@ -1,4 +1,5 @@
-import Image from "next/image";
+// import Image from "next/image";
+import CarouselCustomNavigation from '@/components/reuseble/caroucelle';
 import { PiTiktokLogoLight, PiInstagramLogoLight, PiLinkedinLogoThin, PiFacebookLogoThin, PiSnapchatLogoLight, PiYoutubeLogo, PiThreadsLogo } from "react-icons/pi";
 import { RiTwitterXFill } from "react-icons/ri";
 
@@ -54,9 +55,15 @@ const Services = () => {
             </div>
           </div>
           <div className="h-20 border-b"></div>
-          <div className="flex h-72">
+          <div className="flex h-80 px-4">
             <div className="h-full relative w-3/5 border-l">
-              <Image src="/web.jpg" layout="fill" objectFit="cover" alt="bay" quality={100} />
+              <CarouselCustomNavigation
+                images={["/belekeweb.png", "/beleke4.png", "/qavah.png", "/belekeweb.png"]}
+                autoplay={true}
+                autoplayDelay={2000}
+                transitionDuration={1.5}
+              />
+              {/* <Image src="/web.jpg" layout="fill" objectFit="cover" alt="bay" quality={100} /> */}
             </div>
             <div className="h-full w-2/5 flex justify-center items-center">
               <div className="flex w-40 h-40 gap-2 flex-wrap">

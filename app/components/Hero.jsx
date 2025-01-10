@@ -25,7 +25,12 @@ const HeroSection = () => {
         <div className="flex h-[50%]">
           <div className="w-2/3 flex">
             <div className="border-r border-[#4d4e50] w-2/6">
-              <CarouselCustomNavigation />
+              <CarouselCustomNavigation
+                images={["/image1.JPEG", "/image2.PNG", "/image3.PNG", "/image1.JPEG"]}
+                autoplay={true}
+                autoplayDelay={3000}
+                transitionDuration={1.5}
+              />
             </div>
             <div className=" w-4/6 flex justify-center items-center">
               <Image src="/zoin3.png" alt="Zion Reach Logo" width={300} height={260} quality={70} />
