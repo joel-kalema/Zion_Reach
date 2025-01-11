@@ -3,7 +3,7 @@ const Vision = () => {
   return (
     <section id="vision" className="border mx-auto flex">
       <div className=" h-[100vh] w-1/2 sticky top-0 overflow-hidden">
-        <Image src="/vision.jpg" layout="fill" objectFit="cover" alt="bay" quality={100} />
+        <Image src="/vision.jpg" layout="fill" objectFit="cover" alt="bay" quality={100} priority/>
       </div>
       <div className="pl-16 w-1/2">
         <h3 className="text-3xl font-bold mb-6 sticky top-0 white-gradient-b py-40 z-10">Our Vision</h3>
