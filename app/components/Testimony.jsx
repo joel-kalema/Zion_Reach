@@ -1,5 +1,11 @@
+"use client";
+import { useEffect, memo } from "react";
+import AOS from "aos";
 import Image from "next/image";
 const Testimony = () => {
+  useEffect(() => {
+      AOS.init();
+    }, []);
   const testimonials = [
     {
       name: "Jeremy Sub.",
@@ -30,6 +36,7 @@ const Testimony = () => {
           <div
             key={index}
             className="bg-[#2e2f30] p-4 shadow-lg"
+            data-aos="fade-up" data-aos-duration={`${index}000`}
           >
             <div className="p-4">
               <p className="text-gray-300 italic mb-4">&quot;{testimonial.message}&quot;</p>

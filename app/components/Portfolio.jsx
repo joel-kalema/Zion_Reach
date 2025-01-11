@@ -6,7 +6,7 @@ import { ParallaxProvider, Parallax } from "react-scroll-parallax";
 import { BsArrowRight } from "react-icons/bs";
 import Link from "next/link";
 
-const ParallaxImageSection = memo(({ images, speed, marginTop = "" }) => (
+const ParallaxImageSection = memo(({ images, speed, marginTop }) => (
   <div className={`w-1/3 flex flex-col ${marginTop}`}>
     <Parallax speed={speed}>
       {images.map((src, index) => (
@@ -65,8 +65,8 @@ const Portfolio = () => {
               <div className="w-3/6 relative z-30 text-5xl mx-auto my-60">
                 <Parallax speed={-15}>
                   <p className='font-semibold'>
-                    Revolutionize <span data-aos="zoom-in-down">creative work</span> for companies with 
-                    <span data-aos="zoom-in-down"> style</span> and 
+                    Revolutionize <span data-aos="zoom-in-down">creative work</span> for companies with
+                    <span data-aos="zoom-in-down"> style</span> and
                     <span data-aos="zoom-in-down"> substance</span>
                   </p>
                 </Parallax>
@@ -149,7 +149,7 @@ const Portfolio = () => {
           {projectWeb.map((item, index) => (
             <div key={index} className="w-1/3 h-[25rem] border" data-aos="fade-up" data-aos-duration={`${index}000`}>
               <div className="h-[70%] border-b flex justify-end items-end relative overflow-hidden">
-              <div className="w-[15rem] h-[15rem] bg_1 rounded-full blur-3xl absolute z-10 -top-10 -left-10 opacity-60"></div>
+                <div className="w-[15rem] h-[15rem] bg_1 rounded-full blur-3xl absolute z-10 -top-10 -left-10 opacity-60"></div>
                 <div className="h-[80%] w-[90%] relative z-20">
                   <Image src={item.image} layout="fill" objectFit="cover" alt="project" quality={100} />
                 </div>
