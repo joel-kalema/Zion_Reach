@@ -26,6 +26,8 @@ const ParallaxImageSection = memo(({ images, speed, marginTop }) => (
   </div>
 ));
 
+ParallaxImageSection.displayName = 'ParallaxImageSection';
+
 const Portfolio = () => {
   const cbtImages = ["/cbt1.png", "/cbt2.png", "/cbt3.png", "/cbt4.png", "/cbt5.png"];
   const qavahImages = ["/qavah1.png", "/qavah3.png", "/qavah3.png"];
