@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, memo } from "react";
+import { useEffect } from "react";
 import AOS from "aos";
 import Image from "next/image";
 const Testimony = () => {
