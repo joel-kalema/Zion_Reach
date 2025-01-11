@@ -44,9 +44,9 @@ const HeroSection = () => {
           <div className="w-2/3 flex">
             <div className="border-r border-[#4d4e50] w-2/6">
               <CarouselCustomNavigation
-                images={["/image1.JPEG", "/image2.PNG", "/image3.PNG", "/image1.JPEG"]}
+                images={["/image1.jpeg", "/image2.jpeg", "/image3.jpeg", "/image1.jpeg"]}
                 autoplay={true}
-                autoplayDelay={3000}
+                autoplayDelay={2000}
                 transitionDuration={1.5}
               />
             </div>

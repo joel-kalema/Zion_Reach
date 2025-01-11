@@ -86,7 +86,7 @@ const Portfolio = () => {
               <div className="slow-scroll-content h-full w-5/6 flex items-center justify-between">
                 <div className="h-[25rem] w-[20rem] relative overflow-hidden rotate-6 hover:w-[30rem] hover:h-[35rem] transition-all duration-[1s]">
                   <Image
-                    src="/girl.jpg"
+                    src="/girl.jpeg"
                     layout="fill"
                     objectFit="cover"
                     alt="bay"
@@ -96,7 +96,7 @@ const Portfolio = () => {
                 </div>
                 <div className="h-[15rem] mt-52 blur-lg w-[15rem] relative hover:z-40 hover:blur-0 overflow-hidden -rotate-6 hover:w-[15rem] hover:h-[20rem] transition-all duration-[1s]">
                   <Image
-                    src="/girlart.jpg"
+                    src="/girlart.jpeg"
                     layout="fill"
                     objectFit="cover"
                     alt="bay"
@@ -113,7 +113,7 @@ const Portfolio = () => {
           <div className="absolute left-0 white-gradient-left w-1/6 h-full z-30"></div>
           <div className="absolute right-0 white-gradient-right w-1/6 h-full z-30"></div>
           <div className="flex mx-auto w-1/6">
-            <Image src='/zoin1.png' layout="responsive" width={100} height={200} alt='zoin logo' quality={100} />
+            <Image src='/zoin1.png' layout="responsive" width={100} height={200} alt='zoin logo' quality={100} className="relative z-30"/>
             <Image src='/zoin2.png' layout="responsive" width={100} height={200} alt='zoin logo' />
           </div>
           <div className="absolute top-0 left-0 flex items-center w-full h-full whitespace-nowrap scale-150">
@@ -122,7 +122,7 @@ const Portfolio = () => {
                 <div key={i} className="m-0 text-3xl text-[#000] mx-8 transition-all duration-1000 ease-in-out z-10 font-semibold flex items-center gap-5">
                   <p>{text}</p>
                   <div className="relative w-[8rem] h-[4rem] overflow-hidden rounded-full">
-                    <Image src='/solution.jpg' layout="fill" objectFit="cover" alt="bay" loading="lazy" />
+                    <Image src='/solution.jpeg' layout="fill" objectFit="cover" alt="bay" loading="lazy" />
                   </div>
                 </div>
               ))}
