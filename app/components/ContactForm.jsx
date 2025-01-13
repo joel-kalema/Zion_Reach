@@ -1,7 +1,6 @@
 "use client"
 
 import React, { useState } from "react";
-import { FaChevronRight } from "react-icons/fa6";
 import { IoHappyOutline } from "react-icons/io5";
 import { GrClose } from "react-icons/gr";
 import Image from 'next/image';
