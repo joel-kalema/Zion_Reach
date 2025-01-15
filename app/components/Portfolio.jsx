@@ -57,14 +57,14 @@ const Portfolio = () => {
   return (
     <section id="portfolio">
       <div>
-        <div className="h-[120vh] relative flex flex-wrap">
+        <div className="h-[90vh] lg:h-[120vh] relative flex flex-wrap">
           {Array(4).fill(0).map((_, i) => (
             <div key={i} className={`w-1/2 h-[50%] border-b border-r ${i % 2 === 0 ? "overflow-hidden" : ""}`}></div>
           ))}
 
           <ParallaxProvider>
             <div className="absolute top-0 w-full left-0">
-              <div className="w-3/6 relative z-30 text-5xl mx-auto my-60">
+              <div className="w-5/6 lg:w-3/6 relative z-30 text-2xl lg:text-5xl mx-auto my-60">
                 <Parallax speed={-15}>
                   <p className='font-semibold'>
                     Revolutionize <span data-aos="zoom-in-down">creative work</span> for companies with
@@ -73,7 +73,7 @@ const Portfolio = () => {
                   </p>
                 </Parallax>
                 <Parallax speed={-15}>
-                  <p className="w-4/6 text-lg mix-blend-difference mt-20">
+                  <p className="w-4/6 text-xs lg:text-lg mt-28 lg:mt-20">
                     From bold ideas to stunning realities, we design, develop, and deliver experiences that inspire and captivate.
                   </p>
                 </Parallax>
@@ -94,8 +94,9 @@ const Portfolio = () => {
                     className="group-hover:z-40"
                   />
                 </div>
-                <div className="h-[15rem] mt-52 blur-lg w-[15rem] relative hover:z-40 hover:blur-0 overflow-hidden -rotate-6 hover:w-[15rem] hover:h-[20rem] transition-all duration-[1s]">
+                <div className="hidden lg:block h-[15rem] mt-52 blur-lg w-[15rem] relative hover:z-40 hover:blur-0 overflow-hidden -rotate-6 hover:w-[15rem] hover:h-[20rem] transition-all duration-[1s]">
                   <Image
+                  className=""
                     src="/girlart.jpeg"
                     layout="fill"
                     objectFit="cover"
