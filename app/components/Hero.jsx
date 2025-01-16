@@ -25,24 +25,24 @@ const HeroSection = () => {
   );
 
   return (
-    <section className="relative bg-[#28292A] text-white h-[100vh] overflow-hidden">
+    <section className="relative bg-[#28292A] text-white h-[120vh] lg:h-[100vh] overflow-hidden">
       <div className="absolute white-gradient-black-t top-0 h-[20rem] w-full z-20 opacity-30"></div>
 
       <div className="absolute top-0 left-0 w-full h-full z-30">
-        <div className="flex h-[50%]">
-          <div className="border-b border-[#4d4e50] border-r w-2/3 flex justify-end items-end pr-10">
-            <div>
+        <div className="lg:flex lg:h-[50%]">
+          <div className="border-b border-[#4d4e50] border-r lg:w-2/3 flex justify-end items-end pr-10">
+            <div className="mb-20 pt-40 lg:pb-0 lg:pt-0">
               <h1 className="text-5xl md:text-7xl lg:text-9xl font-bold">Zion Reach</h1>
               <p className="mb-4 flex items-center gap-2">
                 We bring your imagination to life <LuArrowUpRight />
               </p>
             </div>
           </div>
-          <div className="w-1/3"></div>
+          <div className="w-0 lg:w-1/3 hidden lg:block"></div>
         </div>
-        <div className="flex h-[50%]">
-          <div className="w-2/3 flex">
-            <div className="border-r border-[#4d4e50] w-2/6">
+        <div className="lg:flex lg:h-[50%]">
+          <div className="lg:w-2/3 flex">
+            <div className="border-r border-[#4d4e50] hidden lg:block w-2/6">
               <CarouselCustomNavigation
                 images={["/cbt3.png", "/image2.jpeg", "/image3.jpeg", "/cbt3.png"]}
                 autoplay={true}
@@ -50,7 +50,7 @@ const HeroSection = () => {
                 transitionDuration={1.5}
               />
             </div>
-            <div className="w-4/6 flex justify-center items-center">
+            <div className="lg:w-4/6 flex justify-center items-center">
               <Image
                 src="/zoin3.png"
                 alt="Zion Reach Logo"
@@ -61,12 +61,12 @@ const HeroSection = () => {
               />
             </div>
           </div>
-          <div className="border-l border-t border-[#4d4e50] w-1/3 p-10 bg-[#28292A] relative z-40">
-            <p className="text-lg md:text-md leading-relaxed w-5/6 my-10">
+          <div className="border-l border-t border-[#4d4e50] lg:w-1/3 p-10 bg-[#28292A] relative z-40">
+            <p className="text-lg md:text-md leading-relaxed lg:w-5/6 my-10">
               Empowering communities through sustainable solutions, innovation, and collaboration
               for a better tomorrow.
             </p>
-            <div className="mt-8 w-4/6 relative">
+            <div className="mt-8 lg:w-4/6 relative">
               <HoverButton
                 href="#learn-more"
                 text="Get Started"
