@@ -84,7 +84,7 @@ const Portfolio = () => {
           <div className="absolute top-0 h-full w-full overflow-hidden z-20 group">
             <div className="slow-scroll-container h-full">
               <div className="slow-scroll-content h-full w-5/6 flex items-center justify-between">
-                <div className="h-[25rem] w-[20rem] relative overflow-hidden rotate-6 hover:w-[30rem] hover:h-[35rem] transition-all duration-[1s]">
+                <div className="h-[10rem] w-[7rem] lg:h-[25rem] lg:w-[20rem] relative overflow-hidden rotate-6 hover:w-[30rem] hover:h-[35rem] transition-all duration-[1s]">
                   <Image
                     src="/girl.jpeg"
                     layout="fill"
@@ -94,9 +94,9 @@ const Portfolio = () => {
                     className="group-hover:z-40"
                   />
                 </div>
-                <div className="hidden lg:block h-[15rem] mt-52 blur-lg w-[15rem] relative hover:z-40 hover:blur-0 overflow-hidden -rotate-6 hover:w-[15rem] hover:h-[20rem] transition-all duration-[1s]">
+                <div className="mt-52 blur-lg h-[7rem] lg:h-[15rem] w-[5rem] lg:w-[15rem] relative hover:z-40 hover:blur-0 overflow-hidden -rotate-6 hover:w-[15rem] hover:h-[20rem] transition-all duration-[1s]">
                   <Image
-                  className=""
+                    className=""
                     src="/girlart.jpeg"
                     layout="fill"
                     objectFit="cover"
@@ -114,7 +114,7 @@ const Portfolio = () => {
           <div className="absolute left-0 white-gradient-left w-1/6 h-full z-30"></div>
           <div className="absolute right-0 white-gradient-right w-1/6 h-full z-30"></div>
           <div className="flex mx-auto w-1/6">
-            <Image src='/zoin1.png' layout="responsive" width={100} height={200} alt='zoin logo' quality={100} className="relative z-30"/>
+            <Image src='/zoin1.png' layout="responsive" width={100} height={200} alt='zoin logo' quality={100} className="relative z-30" />
             <Image src='/zoin2.png' layout="responsive" width={100} height={200} alt='zoin logo' />
           </div>
           <div className="absolute top-0 left-0 flex items-center w-full h-full whitespace-nowrap scale-150">
