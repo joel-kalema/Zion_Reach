@@ -62,12 +62,12 @@ const ContactForm = () => {
 
   return (
     <section id="contact" className="flex items-center">
-      <div className=" h-[100vh] w-1/2 sticky top-0 overflow-hidden p-10">
+      <div className=" h-[100vh] w-1/2 sticky top-0 hidden lg:bock overflow-hidden p-10">
         <Image src="/service.png" layout="fill" objectFit="cover" alt="bay" quality={100} />
       </div>
-      <div className="container mx-auto text-center w-1/2">
+      <div className="container mx-auto text-center lg:w-1/2 py-10 px-4 lg:py-0 lg:px-0">
         <h2 className="text-3xl font-bold mb-6">Get in Touch</h2>
-        <form onSubmit={handleSubmit} className="max-w-xl mx-auto">
+        <form onSubmit={handleSubmit} className="lg:max-w-xl mx-auto">
           <input
             type="text"
             name="Name"
