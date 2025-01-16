@@ -110,17 +110,17 @@ const Portfolio = () => {
           </div>
         </div>
 
-        <div className="relative h-[40vh] mx-auto overflow-hidden z-10 flex py-10">
+        <div className="relative h-[30vh] lg:h-[40vh] mx-auto overflow-hidden z-10 flex py-10">
           <div className="absolute left-0 white-gradient-left w-1/6 h-full z-30"></div>
           <div className="absolute right-0 white-gradient-right w-1/6 h-full z-30"></div>
-          <div className="flex mx-auto w-1/6">
+          <div className="flex mx-auto w-2/6 lg:w-1/6">
             <Image src='/zoin1.png' layout="responsive" width={100} height={200} alt='zoin logo' quality={100} className="relative z-30" />
             <Image src='/zoin2.png' layout="responsive" width={100} height={200} alt='zoin logo' />
           </div>
           <div className="absolute top-0 left-0 flex items-center w-full h-full whitespace-nowrap scale-150">
             <div className="flex animate-scroll relative">
               {Array(5).fill("we bring your imagination to life").map((text, i) => (
-                <div key={i} className="m-0 text-3xl text-[#000] mx-8 transition-all duration-1000 ease-in-out z-10 font-semibold flex items-center gap-5">
+                <div key={i} className="m-0 text-xl lg:text-3xl text-[#000] mx-8 transition-all duration-1000 ease-in-out z-10 font-semibold flex items-center gap-5">
                   <p>{text}</p>
                   <div className="relative w-[8rem] h-[4rem] overflow-hidden rounded-full">
                     <Image src='/solution.jpeg' layout="fill" objectFit="cover" alt="bay" loading="lazy" />
@@ -131,13 +131,13 @@ const Portfolio = () => {
           </div>
         </div>
 
-        <div className="border-y px-28 py-20">
+        <div className="border-y px-4 lg:px-28 py-6 lg:py-20">
           <h2 className="text-3xl font-bold mb-6">Our Portfolio</h2>
           <p className="text-xl text-[#8e8e8e]">Explore our best works</p>
         </div>
 
         <ParallaxProvider>
-          <div className="flex overflow-hidden h-[120vh] relative w-5/6 mx-auto">
+          <div className="flex overflow-hidden h-[40vh] lg:h-[120vh] relative lg:w-5/6 mx-auto">
             <ParallaxImageSection images={cbtImages} speed={60} marginTop="-mt-96" />
             <ParallaxImageSection images={qavahImages} speed={0} />
             <ParallaxImageSection images={cbtImages} speed={30} marginTop="-mt-60" />
@@ -148,12 +148,12 @@ const Portfolio = () => {
           <p className="text-xl text-[#8e8e8e]">Responsive Websites</p>
         </div>
 
-        <div className="flex pb-20">
+        <div className="lg:flex pb-20">
           {projectWeb.map((item, index) => (
-            <div key={index} className="w-1/3 h-[25rem] border" data-aos="fade-up" data-aos-duration={`${index}000`}>
+            <div key={index} className="lg:w-1/3 h-[20rem] mb-6 lg:mb-0 lg:h-[25rem] border" data-aos="fade-up" data-aos-duration={`${index}000`}>
               <div className="h-[70%] border-b flex justify-end items-end relative overflow-hidden">
                 <div className="w-[15rem] h-[15rem] bg_1 rounded-full blur-3xl absolute z-10 -top-10 -left-10 opacity-60"></div>
-                <div className="h-[80%] w-[90%] relative z-20">
+                <div className="h-[80%] lg:h-[80%] w-[90%] relative z-20">
                   <Image src={item.image} layout="fill" objectFit="cover" alt="project" quality={100} />
                 </div>
               </div>

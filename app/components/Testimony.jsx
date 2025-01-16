@@ -28,14 +28,14 @@ const Testimony = () => {
   ];
 
   return (
-    <section className="bg-[#28292A] py-40 px-20" id="testimonials">
+    <section className="bg-[#28292A] py-40 px-4 lg:px-20" id="testimonials">
       <h2 className="text-3xl font-bold text-[#fff] mb-6">Client Testimonials</h2>
       <h1 className="mb-16 text-xl text-[#fff]">What Customers Says?</h1>
-      <div className="flex gap-10 justify-between">
+      <div className="lg:flex gap-10 justify-between">
         {testimonials.map((testimonial, index) => (
           <div
             key={index}
-            className="bg-[#2e2f30] p-4 shadow-lg"
+            className="bg-[#2e2f30] p-4 shadow-lg mb-6 lg:mb-0"
             data-aos="fade-up" data-aos-duration={`${index}000`}
           >
             <div className="p-4">
