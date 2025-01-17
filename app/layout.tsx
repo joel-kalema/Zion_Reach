@@ -24,7 +24,6 @@ export default function RootLayout({
       </head>
       <body className="antialiased font-clash">
         {/* <Header /> */}
-        {/* <div className="text-xl bg-white px-6 py-2 fixed bottom-0 left-0 z-50 flex items-center justify-between gap-4">MENU <BsListNested /></div> */}
         <main>{children}</main>
         <Footer />
       </body>

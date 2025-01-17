@@ -62,7 +62,7 @@ const ContactForm = () => {
 
   return (
     <section id="contact" className="flex items-center">
-      <div className=" h-[100vh] w-1/2 sticky top-0 hidden lg:bock overflow-hidden p-10">
+      <div className=" h-[100vh] w-1/2 sticky top-0 hidden lg:block overflow-hidden p-10">
         <Image src="/service.png" layout="fill" objectFit="cover" alt="bay" quality={100} />
       </div>
       <div className="container mx-auto text-center lg:w-1/2 py-10 px-4 lg:py-0 lg:px-0">
