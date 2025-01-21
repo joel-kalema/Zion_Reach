@@ -20,9 +20,9 @@ const Testimony = () => {
       picture: '/beleke.png'
     },
     {
-      name: "Damaris",
-      role: "Founder, Startup Inc.",
-      message: "Their branding expertise gave our company a fresh new look. Truly a pleasure to work with!",
+      name: "Damaris NYAMABO",
+      role: "CEO, QAVAH GROUP",
+      message: "Working with Zion Reach was a game-changer for our business. Their team helped us create engaging social media campaigns that doubled our online following in just three months. The professionalism and creativity they brought to the table were beyond our expectations. Highly recommend!",
       picture: '/damaris.JPG'
     },
   ];
