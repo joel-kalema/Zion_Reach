@@ -62,8 +62,7 @@ const HeroSection = () => {
           </div>
           <div className="border-l border-t border-[#4d4e50] lg:w-1/3 p-10 bg-[#28292A] relative z-40">
             <p className="text-lg md:text-md leading-relaxed lg:w-5/6 my-10">
-              Empowering communities through sustainable solutions, innovation, and collaboration
-              for a better tomorrow.
+              At Zion Reach, we create tailored communication and marketing strategies to help businesses and churches grow, engage, and thrive in the digital age.
             </p>
             <div className="mt-8 lg:w-4/6 relative">
               <HoverButton

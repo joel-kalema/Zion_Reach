@@ -8,15 +8,15 @@ const Testimony = () => {
     }, []);
   const testimonials = [
     {
-      name: "Jeremy Sub.",
-      role: "CEO, ABC Corp",
-      message: "Zion Reach transformed our marketing strategy. Their professionalism and creativity are unmatched!",
+      name: "Jérémy Sourdril",
+      role: "Co-founder of Emci tv, Canada.",
+      message: "Zion Reach transformed the way we communicate with our online audience at Emci tv. The videos they created for us were not only visually stunning but also conveyed our message perfectly. Thanks to their guidance, our outreach has grown tremendously, and we’ve seen more engagement than ever before.",
       picture: '/Jeremy.JPG'
     },
     {
       name: "Christopher Beleke",
-      role: "Pastor, TFC Dallas Church",
-      message: "Thanks to Zion Reach, our message now reaches a wider audience. Highly recommend their services!",
+      role: "Founder of TFC Dallas",
+      message: "Zion Reach has been a blessing to our ministry. Their team created high-quality videos and graphics that perfectly aligned with our mission. Since working with them, our church has experienced a significant increase in attendance and online engagement. Their dedication and attention to detail are unmatched!",
       picture: '/beleke.png'
     },
     {
