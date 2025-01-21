@@ -25,7 +25,7 @@ const HeroSection = () => {
   );
 
   return (
-    <section className="relative bg-[#28292A] text-white h-[120vh] lg:h-[100vh] overflow-hidden">
+    <section className="relative bg-[#28292A] text-white h-[120vh] lg:h-[100dvh] overflow-hidden">
       <div className="absolute white-gradient-black-t top-0 h-[20rem] w-full z-20 opacity-30"></div>
       <div className="absolute top-0 left-0 w-full h-full z-30">
         <div className="lg:flex lg:h-[50%]">
@@ -33,7 +33,7 @@ const HeroSection = () => {
             <div className="mb-20 pt-40 lg:pb-0 lg:pt-0">
               <h1 className="text-5xl md:text-7xl lg:text-9xl font-bold">Zion Reach</h1>
               <p className="mb-4 flex items-center gap-2">
-                We bring your imagination to life <LuArrowUpRight />
+                Empower Your Brand. Expand Your Reach. <LuArrowUpRight />
               </p>
             </div>
           </div>
@@ -67,7 +67,7 @@ const HeroSection = () => {
             </p>
             <div className="mt-8 lg:w-4/6 relative">
               <HoverButton
-                href="#learn-more"
+                href="contact"
                 text="Get Started"
                 borderColor="border-[#fff]"
                 circleColor="bg-[#FE8C12]"
