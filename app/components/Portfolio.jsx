@@ -137,7 +137,7 @@ const Portfolio = () => {
         </div>
 
         <ParallaxProvider>
-          <div className="flex overflow-hidden h-[40vh] lg:h-[120vh] relative lg:w-5/6 mx-auto">
+          <div className="flex overflow-hidden h-[40vh] lg:h-[80vh] relative lg:w-5/6 mx-auto">
             <ParallaxImageSection images={cbtImages} speed={60} marginTop="-mt-96" />
             <ParallaxImageSection images={qavahImages} speed={0} />
             <ParallaxImageSection images={cbtImages} speed={30} marginTop="-mt-60" />
@@ -148,9 +148,9 @@ const Portfolio = () => {
           <p className="text-xl text-[#8e8e8e]">Responsive Websites</p>
         </div>
 
-        <div className="lg:flex pb-20">
+        <div className="lg:flex pb-20 lg:w-5/6 mx-auto">
           {projectWeb.map((item, index) => (
-            <div key={index} className="lg:w-1/3 h-[20rem] mb-6 lg:mb-0 lg:h-[25rem] border" data-aos="fade-up" data-aos-duration={`${index}000`}>
+            <div key={index} className="lg:w-1/3 h-[20rem] mb-6 lg:mb-0 lg:h-[20rem] border" >
               <div className="h-[70%] border-b flex justify-end items-end relative overflow-hidden">
                 <div className="w-[15rem] h-[15rem] bg_1 rounded-full blur-3xl absolute z-10 -top-10 -left-10 opacity-60"></div>
                 <div className="h-[80%] lg:h-[80%] w-[90%] relative z-20">

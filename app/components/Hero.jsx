@@ -30,7 +30,7 @@ const HeroSection = () => {
       <div className="absolute top-0 left-0 w-full h-full z-30">
         <div className="lg:flex lg:h-[50%]">
           <div className="border-b border-[#4d4e50] border-r lg:w-2/3 flex justify-end items-end pr-10">
-            <div className="mb-20 pt-40 lg:pb-0 lg:pt-0">
+            <div className="mb-20 lg:mb-0 pt-40 lg:pb-0 lg:pt-0">
               <h1 className="text-5xl md:text-7xl lg:text-9xl font-bold">Zion Reach</h1>
               <p className="mb-4 flex items-center gap-2">
                 Empower Your Brand. Expand Your Reach. <LuArrowUpRight />
