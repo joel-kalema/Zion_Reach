@@ -136,9 +136,16 @@ const Portfolio = () => {
           </div>
         </div>
 
-        <div className="border-y px-4 lg:px-28 py-6 lg:py-20">
+        <div className="w-5/6 mx-auto my-20">
           <h2 className="text-3xl font-bold mb-6">Our Portfolio</h2>
-          <p className="text-xl text-[#8e8e8e]">Explore our best works</p>
+          <div className="flex items-center gap-4 border-y">
+            <div className="border-2 border-[#FE8C12] w-10 h-10 lg:w-20 lg:h-20 rounded-full flex justify-center items-center">
+              <div className="w-4 h-4 lg:w-8 lg:h-8 bg-[#FE8C12] rounded-full"></div>
+            </div>
+            <p className="text-4xl">
+              Explore our best works
+            </p>
+          </div>
         </div>
 
         <ParallaxProvider>
@@ -149,8 +156,13 @@ const Portfolio = () => {
           </div>
         </ParallaxProvider>
 
-        <div className="border-t py-16 w-5/6 mx-auto">
-          <p className="text-xl text-[#8e8e8e]">Responsive Websites</p>
+        <div className="flex items-center w-5/6 mx-auto my-20 gap-4 border-y">
+          <div className="border-2 border-[#FE8C12] w-10 h-10 lg:w-20 lg:h-20 rounded-full flex justify-center items-center">
+            <div className="w-4 h-4 lg:w-8 lg:h-8 bg-[#FE8C12] rounded-full"></div>
+          </div>
+          <p className="text-4xl">
+            Responsive Websites
+          </p>
         </div>
 
         <div className="lg:flex pb-20 lg:w-5/6 mx-auto flex-wrap justify-between">
