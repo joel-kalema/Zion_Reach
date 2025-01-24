@@ -29,7 +29,7 @@ const Testimony = () => {
 
   return (
     <section className="bg-[#28292A] flex px-4 lg:px-0" id="testimonials">
-      <div className="w-1/2 py-20 px-10">
+      <div className="w-1/2 py-10 px-10">
         {testimonials.map((testimonial, index) => (
           <div
             key={index}

@@ -43,9 +43,9 @@ const Portfolio = () => {
       image: "/belekeweb.png"
     },
     {
-      title: "Qavah Groupe",
-      link: "https://qavahjk.vercel.app/",
-      image: "/qavah.png"
+      title: "Eleka",
+      link: "https://elekainc.com/",
+      image: "/eleka.png"
     },
     {
       title: "TABLE OF EAGLES",
@@ -184,6 +184,23 @@ const Portfolio = () => {
             </div>
           ))}
         </div>
+
+
+        {/* <div className="flex w-5/6 h-[80vh] mx-auto gap-20">
+          <div className="w-4/5 md:w-4/6 lg:w-5/12 overflow-hidden">
+            <video className="h-full w-full rounded-lg" controls autoPlay muted>
+              <source src="/IMG_1680.MP4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div className="w-4/5 md:w-4/6 lg:w-5/12 overflow-hidden">
+            <video className="h-full w-full rounded-lg" controls autoPlay muted>
+              <source src="/IMG_2690.MP4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div> */}
+
       </div>
     </section>
   );
