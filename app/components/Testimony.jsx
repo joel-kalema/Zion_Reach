@@ -52,10 +52,10 @@ const Testimony = () => {
         ))}
       </div>
       <div className="w-1/2 relative">
-        <div className="absolute z-20 py-16 px-10">
+        {/* <div className="absolute z-20 py-16 px-10">
           <h2 className="text-5xl font-bold text-[#fff] mb-6">Client Testimonials</h2>
           <h1 className="text-xl text-[#fff]">What Customers Says?</h1>
-        </div>
+        </div> */}
 
         <div className="absolute bottom-0 left-0 z-20 py-16 px-10">
           <h2 className="text-6xl font-bold text-[#fff] mb-6">Are U the next One!</h2>

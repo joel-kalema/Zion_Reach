@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-// import Header from './components/Header';
+import Header from './components/Header';
 import Footer from './components/Footer';
 // import { BsListNested } from "react-icons/bs";
 
@@ -22,8 +22,8 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="antialiased font-clash">
-        {/* <Header /> */}
+      <body className="antialiased font-clash relative">
+        <Header />
         <main>{children}</main>
         <Footer />
       </body>
