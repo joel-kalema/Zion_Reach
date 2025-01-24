@@ -25,7 +25,7 @@ const HeroSection = () => {
   );
 
   return (
-    <section className="relative bg-[#28292A] text-white h-[120vh] lg:h-[100dvh] overflow-hidden">
+    <section className="relative bg-[#28292A] text-white h-[120vh] lg:h-[100dvh] overflow-hidden" id="home">
       <div className="absolute white-gradient-black-t top-0 h-[20rem] w-full z-20 opacity-30"></div>
       <div className="absolute top-0 left-0 w-full h-full z-30">
         <div className="lg:flex lg:h-[50%]">

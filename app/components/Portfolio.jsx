@@ -60,7 +60,7 @@ const Portfolio = () => {
   ]
 
   return (
-    <section id="portfolio">
+    <section>
       <div>
         <div className="h-[90vh] lg:h-[120vh] relative flex flex-wrap">
           {Array(4).fill(0).map((_, i) => (
@@ -136,7 +136,7 @@ const Portfolio = () => {
           </div>
         </div>
 
-        <div className="w-5/6 mx-auto my-20">
+        <div className="w-5/6 mx-auto my-20" id="portfolio">
           <h2 className="text-3xl font-bold mb-6">Our Portfolio</h2>
           <div className="flex items-center gap-4 border-y">
             <div className="border-2 border-[#FE8C12] w-10 h-10 lg:w-20 lg:h-20 rounded-full flex justify-center items-center">
