@@ -44,13 +44,18 @@ const Portfolio = () => {
     },
     {
       title: "Qavah Groupe",
-      link: "https://christopherbeleke.com/",
+      link: "https://qavahjk.vercel.app/",
       image: "/qavah.png"
     },
     {
-      title: "RAMAH Institute",
-      link: "https://christopherbeleke.com/",
-      image: "/beleke4.png"
+      title: "TABLE OF EAGLES",
+      link: "https://tableofeagles.christopherbeleke.com/",
+      image: "/eagles.png"
+    },
+    {
+      title: "JK Portfolio",
+      link: "https://joelkalema.vercel.app/",
+      image: "/portfolio.png"
     }
   ]
 
@@ -148,21 +153,21 @@ const Portfolio = () => {
           <p className="text-xl text-[#8e8e8e]">Responsive Websites</p>
         </div>
 
-        <div className="lg:flex pb-20 lg:w-5/6 mx-auto">
+        <div className="lg:flex pb-20 lg:w-5/6 mx-auto flex-wrap justify-between">
           {projectWeb.map((item, index) => (
-            <div key={index} className="lg:w-1/3 h-[20rem] mb-6 lg:mb-0 lg:h-[20rem] border" >
+            <div key={index} className="lg:w-[48%] h-[20rem] mb-10 lg:h-[25rem] border" >
               <div className="h-[70%] border-b flex justify-end items-end relative overflow-hidden">
                 <div className="w-[15rem] h-[15rem] bg_1 rounded-full blur-3xl absolute z-10 -top-10 -left-10 opacity-60"></div>
-                <div className="h-[80%] lg:h-[80%] w-[90%] relative z-20">
+                <div className="h-[80%] lg:h-[85%] w-[92%] relative z-20">
                   <Image src={item.image} layout="fill" objectFit="cover" alt="project" quality={100} />
                 </div>
               </div>
               <div className="h-[30%] pl-14 py-4">
-                <div className="flex gap-4 items-center mb-6 text-xl font-bold">
+                <div className="flex gap-4 items-center mb-4 text-xl font-bold">
                   <div className="w-[10px] h-[10px] bg-[#FE8C12]"></div>
                   {item.title}
                 </div>
-                <Link href={item.link} className="flex items-center gap-2">SEE DETAILS <BsArrowRight /></Link>
+                <Link href={item.link} className="flex items-center justify-between gap-2 border border-[#28292A] px-10 py-2 w-2/5 rounded-full">SEE DETAILS <BsArrowRight /></Link>
               </div>
             </div>
           ))}
