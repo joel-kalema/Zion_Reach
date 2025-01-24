@@ -149,7 +149,7 @@ const Portfolio = () => {
           </div>
         </ParallaxProvider>
 
-        <div className="border-y py-16 w-5/6 mx-auto">
+        <div className="border-t py-16 w-5/6 mx-auto">
           <p className="text-xl text-[#8e8e8e]">Responsive Websites</p>
         </div>
 
