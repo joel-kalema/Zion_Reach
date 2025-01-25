@@ -174,33 +174,16 @@ const Portfolio = () => {
                   <Image src={item.image} layout="fill" objectFit="cover" alt="project" quality={100} />
                 </div>
               </div>
-              <div className="h-[30%] pl-14 py-4">
+              <div className="h-[30%] pl-4 lg:pl-14 py-4">
                 <div className="flex gap-4 items-center mb-4 text-xl font-bold">
                   <div className="w-[10px] h-[10px] bg-[#FE8C12]"></div>
                   {item.title}
                 </div>
-                <Link href={item.link} className="flex items-center justify-between gap-2 border border-[#28292A] px-10 py-2 w-2/5 rounded-full">SEE DETAILS <BsArrowRight /></Link>
+                <Link href={item.link} className="flex items-center justify-between gap-2 border border-[#28292A] px-10 py-2 w-3/5 lg:w-2/5 rounded-full">SEE DETAILS <BsArrowRight /></Link>
               </div>
             </div>
           ))}
         </div>
-
-
-        {/* <div className="flex w-5/6 h-[80vh] mx-auto gap-20">
-          <div className="w-4/5 md:w-4/6 lg:w-5/12 overflow-hidden">
-            <video className="h-full w-full rounded-lg" controls autoPlay muted>
-              <source src="/IMG_1680.MP4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-          <div className="w-4/5 md:w-4/6 lg:w-5/12 overflow-hidden">
-            <video className="h-full w-full rounded-lg" controls autoPlay muted>
-              <source src="/IMG_2690.MP4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        </div> */}
-
       </div>
     </section>
   );
