@@ -80,19 +80,19 @@ const Services = () => {
           </div>
         </div>
 
-        <div className="flex my-20 border-y">
-          <div className="w-1/2 px-10 py-14">
-          <h1>Boost your brand with dynamic and captivating content:</h1>
-          <ul  className="pl-5 mt-6">
-            <li className="flex items-center gap-3"><IoCheckmarkDoneOutline className="text-[#FE8C12]"/>Professional YouTube thumbnails</li>
-            <li className="flex items-center gap-3"><IoCheckmarkDoneOutline className="text-[#FE8C12]"/>Engaging Social Media Posts</li>
-            <li className="flex items-center gap-3"><IoCheckmarkDoneOutline className="text-[#FE8C12]"/>Short Promotional Videos</li>
-            <li className="flex items-center gap-3"><IoCheckmarkDoneOutline className="text-[#FE8C12]"/>Eye-Catching Graphics</li>
-            <li  className="flex items-center gap-3"><IoCheckmarkDoneOutline className="text-[#FE8C12]"/>Custom Content Strategies</li>
-          </ul>
-          </div>
-          <div className="h-[50vh] w-1/2 hidden lg:block overflow-hidden relative">
+        <div className="lg:flex flex-row-reverse my-10 lg:my-20 border-y">
+          <div className="h-[20vh] lg:h-[50vh] lg:w-1/2 overflow-hidden relative">
             <Image src="/content.jpg" layout="fill" objectFit="cover" alt="bay" quality={100} priority />
+          </div>
+          <div className="lg:w-1/2 px-4 lg:px-10 py-4 lg:py-14">
+            <h1>Boost your brand with dynamic and captivating content:</h1>
+            <ul className="pl-5 mt-6">
+              <li className="flex items-center gap-3"><IoCheckmarkDoneOutline className="text-[#FE8C12]" />Professional YouTube thumbnails</li>
+              <li className="flex items-center gap-3"><IoCheckmarkDoneOutline className="text-[#FE8C12]" />Engaging Social Media Posts</li>
+              <li className="flex items-center gap-3"><IoCheckmarkDoneOutline className="text-[#FE8C12]" />Short Promotional Videos</li>
+              <li className="flex items-center gap-3"><IoCheckmarkDoneOutline className="text-[#FE8C12]" />Eye-Catching Graphics</li>
+              <li className="flex items-center gap-3"><IoCheckmarkDoneOutline className="text-[#FE8C12]" />Custom Content Strategies</li>
+            </ul>
           </div>
         </div>
 
@@ -102,31 +102,31 @@ const Services = () => {
           <div>
             <h1 className="text-md lg:text-4xl font-bold mb-4 lg:mb-10">Digital Strategy & Business Consulting</h1>
             <p className="lg:w-4/6">
-            Targeted ad campaigns and tailored growth strategies for businesses and churches to maximize reach and impact.
+              Targeted ad campaigns and tailored growth strategies for businesses and churches to maximize reach and impact.
             </p>
           </div>
         </div>
 
-        <div className="flex my-20 border-y bg-white">
-          <div className="h-[50vh] w-1/2 hidden lg:block overflow-hidden relative">
+        <div className="lg:flex my-10 lg:my-20 border-y bg-white">
+          <div className="h-[20vh] lg:h-[50vh] lg:w-1/2 overflow-hidden relative">
             <Image src="/analitics.jpg" layout="fill" objectFit="cover" alt="bay" quality={100} priority />
           </div>
 
-          <div className="w-1/2 px-10 py-14">
+          <div className="lg:w-1/2 px-4 lg:px-10 py-4 lg:py-14">
             <h1>Empower your brand with impactful, data-driven strategies:</h1>
             <ul className="pl-5 mt-6">
-              <li className="flex items-center gap-3"><IoCheckmarkDoneOutline className="text-[#FE8C12]"/>Targeted Digital Ad Campaigns</li>
-              <li className="flex items-center gap-3"><IoCheckmarkDoneOutline className="text-[#FE8C12]"/>Growth Strategy for Businesses & Churches</li>
-              <li className="flex items-center gap-3"><IoCheckmarkDoneOutline className="text-[#FE8C12]"/>Brand Identity & Messaging Consultation</li>
-              <li className="flex items-center gap-3"><IoCheckmarkDoneOutline className="text-[#FE8C12]"/>Market Trend Analysis & Insights</li>
-          </ul>
+              <li className="flex items-center gap-3"><IoCheckmarkDoneOutline className="text-[#FE8C12]" />Targeted Digital Ad Campaigns</li>
+              <li className="flex items-center gap-3"><IoCheckmarkDoneOutline className="text-[#FE8C12]" />Growth Strategy for Businesses & Churches</li>
+              <li className="flex items-center gap-3"><IoCheckmarkDoneOutline className="text-[#FE8C12]" />Brand Identity & Messaging Consultation</li>
+              <li className="flex items-center gap-3"><IoCheckmarkDoneOutline className="text-[#FE8C12]" />Market Trend Analysis & Insights</li>
+            </ul>
           </div>
         </div>
 
 
         <div className="border-y">
-            <h1 className="w-5/6 text-md lg:text-4xl font-bold mb-4 lg:mb-10">Top Social media platforms for marketing</h1>
-            {/* <p className="lg:w-4/6">
+          <h1 className="w-5/6 text-md lg:text-4xl font-bold mb-4 lg:mb-10">Top Social media platforms for marketing</h1>
+          {/* <p className="lg:w-4/6">
               Zion Reach is dedicated to providing creative communication services that make a difference.
               We help our clients grow through professional content creation, strategic marketing,
               and building authentic connections with their audiences.

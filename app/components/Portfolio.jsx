@@ -119,8 +119,8 @@ const Portfolio = () => {
           <div className="absolute left-0 white-gradient-left w-1/6 h-full z-30"></div>
           <div className="absolute right-0 white-gradient-right w-1/6 h-full z-30"></div>
           <div className="flex mx-auto w-2/6 lg:w-1/6">
-            <Image src='/zoin1.png' layout="responsive" width={100} height={200} alt='zoin logo' quality={100} className="relative z-30" />
-            <Image src='/zoin2.png' layout="responsive" width={100} height={200} alt='zoin logo' />
+            <Image src='/zoin1.png' layout="responsive" width={120} height={200} alt='zoin logo' quality={100} className="relative z-30" />
+            <Image src='/zoin2.png' layout="responsive" width={120} height={200} alt='zoin logo' />
           </div>
           <div className="absolute top-0 left-0 flex items-center w-full h-full whitespace-nowrap scale-150">
             <div className="flex animate-scroll relative">
@@ -142,7 +142,7 @@ const Portfolio = () => {
             <div className="border-2 border-[#FE8C12] w-10 h-10 lg:w-20 lg:h-20 rounded-full flex justify-center items-center">
               <div className="w-4 h-4 lg:w-8 lg:h-8 bg-[#FE8C12] rounded-full"></div>
             </div>
-            <p className="text-4xl">
+            <p className="text-2xl lg:text-4xl">
               Explore our best works
             </p>
           </div>
@@ -160,7 +160,7 @@ const Portfolio = () => {
           <div className="border-2 border-[#FE8C12] w-10 h-10 lg:w-20 lg:h-20 rounded-full flex justify-center items-center">
             <div className="w-4 h-4 lg:w-8 lg:h-8 bg-[#FE8C12] rounded-full"></div>
           </div>
-          <p className="text-4xl">
+          <p className="text-2xl lg:text-4xl">
             Responsive Websites
           </p>
         </div>
