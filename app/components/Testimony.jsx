@@ -29,7 +29,7 @@ const Testimony = () => {
 
   return (
     <section className="bg-[#28292A] lg:flex px-4 lg:px-0" id="testimonials">
-      <div className="w-1/2 py-10 px-10">
+      <div className="lg:w-1/2 py-10 px-0 lg:px-10">
         {testimonials.map((testimonial, index) => (
           <div
             key={index}
@@ -38,8 +38,8 @@ const Testimony = () => {
           >
             <div className="p-4">
               <p className="text-gray-300 italic mb-4">&quot;{testimonial.message}&quot;</p>
-              <div className="flex gap-10">
-                <div className="relative w-[4rem] h-[4rem] rounded-full overflow-hidden">
+              <div className="flex gap-4 lg:gap-10">
+                <div className="relative w-[3rem] h-[3rem] lg:w-[4rem] lg:h-[4rem] rounded-full overflow-hidden">
                   <Image src={testimonial.picture} layout="fill" objectFit="cover" alt="bay" quality={100} />
                 </div>
                 <div>
