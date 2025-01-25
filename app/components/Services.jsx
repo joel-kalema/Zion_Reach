@@ -29,8 +29,8 @@ const Services = () => {
 
   return (
     <section id="services" className="lg:py-40 relative border-b">
-      <div className="w-5/6 mx-auto sticky top-0 z-30 white-gradient-b pb-20 pt-10">
-        <h1 className="text-3xl font-bold mb-6 z-10">Our Services</h1>
+      <div className="lg:w-5/6 px-4 lg:px-0 mx-auto sticky top-0 z-30 white-gradient-b pb-20 pt-6">
+        <h1 className="text-3xl font-bold lg:mb-6 mb-2 z-10">Our Services</h1>
         <p>We bring your vision to life with:</p>
       </div>
 

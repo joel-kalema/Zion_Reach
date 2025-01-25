@@ -69,7 +69,7 @@ const Portfolio = () => {
 
           <ParallaxProvider>
             <div className="absolute top-0 w-full left-0">
-              <div className="w-5/6 lg:w-3/6 relative z-30 text-2xl lg:text-5xl mx-auto my-60">
+              <div className="px-6 lg:px-0 lg:w-3/6 relative z-30 text-4xl lg:text-5xl mx-auto my-60">
                 <Parallax speed={-15}>
                   <p className='font-semibold'>
                     Revolutionize <span data-aos="zoom-in-down">creative work</span> for companies with
@@ -89,7 +89,7 @@ const Portfolio = () => {
           <div className="absolute top-0 h-full w-full overflow-hidden z-20 group">
             <div className="slow-scroll-container h-full">
               <div className="slow-scroll-content h-full w-5/6 flex items-center justify-between">
-                <div className="h-[10rem] w-[7rem] lg:h-[25rem] lg:w-[20rem] relative overflow-hidden rotate-6 hover:w-[30rem] hover:h-[35rem] transition-all duration-[1s]">
+                <div className="h-[9rem] w-[7rem] lg:h-[25rem] lg:w-[20rem] relative overflow-hidden rotate-6 hover:w-[30rem] hover:h-[35rem] transition-all duration-[1s]">
                   <Image
                     src="/girl.jpeg"
                     layout="fill"
@@ -136,7 +136,7 @@ const Portfolio = () => {
           </div>
         </div>
 
-        <div className="w-5/6 mx-auto my-20 sticky top-0 z-30 bg-white" id="portfolio">
+        <div className="lg:w-5/6 px-4 lg:px-0 mx-auto my-20 sticky top-0 z-30 bg-white" id="portfolio">
           <h2 className="text-3xl font-bold mb-6">Our Portfolio</h2>
           <div className="flex items-center gap-4 border-y">
             <div className="border-2 border-[#FE8C12] w-10 h-10 lg:w-20 lg:h-20 rounded-full flex justify-center items-center">
@@ -156,7 +156,7 @@ const Portfolio = () => {
           </div>
         </ParallaxProvider>
 
-        <div className="flex items-center w-5/6 mx-auto my-20 gap-4 border-y sticky top-16 z-30 bg-white">
+        <div className="flex items-center lg:w-5/6 px-4 lg:px-0 mx-auto my-20 gap-4 border-y sticky top-16 z-30 bg-white">
           <div className="border-2 border-[#FE8C12] w-10 h-10 lg:w-20 lg:h-20 rounded-full flex justify-center items-center">
             <div className="w-4 h-4 lg:w-8 lg:h-8 bg-[#FE8C12] rounded-full"></div>
           </div>
