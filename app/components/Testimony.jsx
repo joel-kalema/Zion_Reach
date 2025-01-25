@@ -28,13 +28,13 @@ const Testimony = () => {
   ];
 
   return (
-    <section className="bg-[#28292A] flex px-4 lg:px-0" id="testimonials">
+    <section className="bg-[#28292A] lg:flex px-4 lg:px-0" id="testimonials">
       <div className="w-1/2 py-10 px-10">
         {testimonials.map((testimonial, index) => (
           <div
             key={index}
-            className={index == 1 ? "p-4 shadow-md -mr-36 bg-[#28292A] ml-36 mb-6 lg:mb-6 z-20 relative" : "p-4 shadow-md mb-6 lg:mb-6"}
-            data-aos="fade-up" data-aos-duration={`${index}000`}
+            className={index == 1 ? "p-4 shadow-md lg:-mr-36 bg-[#28292A] lg:ml-36 mb-6 lg:mb-6 z-20 relative" : "p-4 shadow-md mb-6 lg:mb-6"}
+            data-aos="fade-up" data-aos-duration={500}
           >
             <div className="p-4">
               <p className="text-gray-300 italic mb-4">&quot;{testimonial.message}&quot;</p>
@@ -51,7 +51,7 @@ const Testimony = () => {
           </div>
         ))}
       </div>
-      <div className="w-1/2 relative">
+      <div className="lg:w-1/2 hidden lg:block relative">
         <div className="absolute z-20 py-16 px-10">
           <h2 className="text-5xl font-bold text-[#fff] mb-6">Client Testimonials</h2>
           <h1 className="text-xl text-[#fff]">What Customers Says?</h1>

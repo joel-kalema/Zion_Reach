@@ -13,7 +13,7 @@ export default function Header() {
   const [open, setOpen] = React.useState(false);
 
   return (
-    <div className="fixed top-4 lg:top-10 right-16 z-50">
+    <div className="fixed top-4 lg:top-10 right-5 lg:right-16 z-50">
       <SpeedDial open={open} handler={setOpen}>
         <SpeedDialHandler>
           <IconButton size="lg" className="rounded-none">
